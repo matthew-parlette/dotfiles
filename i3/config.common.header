@@ -211,7 +211,7 @@ for_window [window_role="pop-up"] floating enable
 for_window [title="Hangouts"] move container to workspace $chat
 for_window [title="^Endless Space"] floating enable
 for_window [title="^Cities\: Skylines$"] floating enable
-
+for_window [title="^Remmina"] floating enable
 
 # host specific config
 ######################
