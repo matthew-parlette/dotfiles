@@ -5,12 +5,20 @@ new_window pixel
 exec xrandr --output DVI-I-1 --rotate left --output DVI-D-0 --right-of DVI-I-1 --output HDMI-0 --rotate left --right-of DVI-D-0
 
 # workspace screens
+# DVI-I-1: Left
+# DVI-D-0: Middle
+# HDMI-0:  Right
 workspace $personal output DVI-I-1
 workspace $work output DVI-I-1
+
 workspace $terminal output HDMI-0
+
 workspace $dev output DVI-D-0
 workspace $chat output DVI-D-0
 workspace $game output DVI-D-0
+workspace $vm output DVI-D-0
+workspace $audio output DVI-D-0
+workspace $9 output DVI-D-0
 
 # custom keybinds for logitech k800
 ## f1 - home
