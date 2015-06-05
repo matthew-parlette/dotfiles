@@ -189,25 +189,29 @@ assign [instance="espn.go.com__espnradio_play"] $audio
 
 ## floating windows
 ### run xprop to get window settings
-### instance: first part of WM_CLASS
-### class: second part of WM_CLASS
-### window_role: WM_WINDOW_ROLE
-### title: _NET_WM_NAME or WM_NAME
 
-for_window [title="Hangouts"] move container to workspace $chat
-for_window [window_role="pop-up"] floating enable
+### instance: first part of WM_CLASS
+for_window [instance="^StarRealms"] floating enable
+for_window [instance="^X\-Wing"] floating enable
+
+### class: second part of WM_CLASS
 for_window [class="[Ss]hutter"] floating enable
 for_window [class="Steam" title="Chat$"] floating enable
 for_window [class="Civ5XP"] floating enable
 for_window [class="XCOM"] floating enable
 for_window [class="[gG]calctool"] floating enable
-for_window [title="^Cities\: Skylines$"] floating enable
 for_window [class="^hl2_linux$"] floating enable
 for_window [class="^jquest"] floating enable
 for_window [class="X3AP_main"] floating enable
+
+### window_role: WM_WINDOW_ROLE
+for_window [window_role="pop-up"] floating enable
+
+### title: _NET_WM_NAME or WM_NAME
+for_window [title="Hangouts"] move container to workspace $chat
 for_window [title="^Endless Space"] floating enable
-for_window [instance="^StarRealms"] floating enable
-for_window [instance="^X\-Wing"] floating enable
+for_window [title="^Cities\: Skylines$"] floating enable
+
 
 # host specific config
 ######################
