@@ -4,4 +4,56 @@ vendor=0x050d
 product=0x0815
 
 [Map:n52]
-KEY_TAB:
+# 01
+# KEY_TAB:
+# 02
+# KEY_Q:
+# 03
+# KEY_W:
+# 04
+# KEY_E:
+# 05
+# KEY_R: KEY_P,50,KEY_DOWN,50,KEY_DOWN,50,KEY_DOWN,50,KEY_RIGHT,50,KEY_DOWN,50,KEY_ENTER,50,KEY_DOWN,50,KEY_ENTER
+# 06 - Blue light shows we're in desktop mode
+KEY_CAPSLOCK: LED_CAPSL@0 + LED_NUML@0 + LED_SCROLLL@1.
+# 07
+# KEY_A:
+# 08
+# KEY_S:
+# 09
+# KEY_D:
+# 10
+# KEY_F:
+# 11
+# KEY_LEFTSHIFT:
+# 12
+# KEY_Z:
+# 13
+# KEY_X:
+# 14
+# KEY_C:
+# 15
+# KEY_SPACE: KEY_LEFTSHIFT + KEY_T
+
+# Wheel
+# Up
+# REL_WHEEL>=KEY_LEFTSHIFT+KEY_EQUAL
+# Down
+# REL_WHEEL<=KEY_MINUS
+
+# D-pad
+# KEY_UP:
+# KEY_DOWN:
+# KEY_LEFT:
+# KEY_RIGHT:
+
+# Green Mode
+# [Map:n52 + LED_CAPSL]
+# 06 - to red mode
+# KEY_CAPSLOCK: LED_CAPSL@0 + LED_NUML@1 + LED_SCROLLL@0
+
+# Red Mode
+# [Map:n52 + LED_NUML]
+# 06 - to green mode
+# KEY_CAPSLOCK: LED_CAPSL@1 + LED_NUML@0 + LED_SCROLLL@0.
+# KEY_SPACE: KEY_J
