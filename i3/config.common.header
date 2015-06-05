@@ -184,8 +184,8 @@ assign [title="[Ss]team"] $game
 assign [class="Skype"] $chat
 # assign [class="Atom"] $dev
 assign [title="^xp.*VirtualBox$"] $vm
-assign [instance="www.yahoosportsradio.com__listen"] $audio
-assign [instance="espn.go.com__espnradio_play"] $audio
+# assign [instance="www.yahoosportsradio.com__listen"] $audio
+# assign [instance="espn.go.com__espnradio_play"] $audio
 
 ## floating windows
 ### run xprop to get window settings
@@ -208,7 +208,7 @@ for_window [class="X3AP_main"] floating enable
 for_window [window_role="pop-up"] floating enable
 
 ### title: _NET_WM_NAME or WM_NAME
-for_window [title="Hangouts"] move container to workspace $chat
+# for_window [title="Hangouts"] move container to workspace $chat
 for_window [title="^Endless Space"] floating enable
 for_window [title="^Cities\: Skylines$"] floating enable
 for_window [title="^Remmina"] floating enable
