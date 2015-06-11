@@ -163,17 +163,6 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-# bar config (i3blocks)
-# https://github.com/vivien/i3blocks
-bar {
-        position top
-        status_command i3blocks
-        colors {
-            background #232323
-            statusline #DCDCDC
-        }
-}
-
 # window rules
 ## WM_NAME -> title
 assign [instance="google-chrome.Default"] $personal

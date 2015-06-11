@@ -20,6 +20,40 @@ workspace $vm output DVI-D-0
 workspace $audio output DVI-D-0
 workspace $9 output DVI-D-0
 
+# Override i3 bar for multi-monitor
+# bar config (i3blocks)
+# https://github.com/vivien/i3blocks
+# DVI-I-1: Left
+# DVI-D-0: Middle
+# HDMI-0:  Right
+bar {
+        output DVI-I-1
+        position top
+        status_command i3blocks
+        colors {
+            background #232323
+            statusline #DCDCDC
+        }
+}
+bar {
+        output DVI-D-0
+        position top
+        status_command i3blocks
+        colors {
+            background #232323
+            statusline #DCDCDC
+        }
+}
+bar {
+        output HDMI-0
+        position top
+        status_command i3blocks
+        colors {
+            background #232323
+            statusline #DCDCDC
+        }
+}
+
 # custom keybinds for logitech k800
 ## f1 - home
 # bindsym XF86HomePage

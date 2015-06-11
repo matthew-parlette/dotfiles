@@ -1,3 +1,14 @@
+# bar config (i3blocks)
+# https://github.com/vivien/i3blocks
+bar {
+        position top
+        status_command i3blocks
+        colors {
+            background #232323
+            statusline #DCDCDC
+        }
+}
+
 # custom keybinds for logitech k800
 ## f1 - home
 # bindsym XF86HomePage
