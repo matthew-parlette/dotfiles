@@ -14,9 +14,6 @@
     -
       - "ls ~/.local/share/applications || mkdir -p ~/.local/share/applications"
       - "Creating user applications directory if it does not exist"
-    -
-      - "rm -rf ~/.liquidprompt;rm .bashrc"
-      - "Deleting some regular files to replace with links"
 - clean:
     - "~"
     - "~/.dotfiles"
