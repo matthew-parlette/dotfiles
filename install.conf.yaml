@@ -14,6 +14,9 @@
     -
       - "ls ~/.local/share/applications || mkdir -p ~/.local/share/applications"
       - "Creating user applications directory if it does not exist"
+    -
+      - "rm -rf ~/.liquidprompt;rm .bashrc"
+      - "Deleting some regular files to replace with links"
 - clean:
     - "~"
     - "~/.dotfiles"
@@ -24,6 +27,8 @@
     - "~/.config/gtk-3.0"
     - "~/.config/pystromo"
     - "~/.fonts"
+    - "~/.vim"
+    - "~/.vimrc"
 - link:
     ~/.bashrc: bashrc
     ~/.liquidprompt: liquidprompt
@@ -35,4 +40,6 @@
     ~/.local/share/applications/google-chrome-personal.desktop: applications/google-chrome-personal.desktop
     ~/.local/share/applications/google-chrome-work.desktop: applications/google-chrome-work.desktop
     ~/.fonts: fonts
+    ~/.vim: vim
+    ~/.vimrc: vimrc
 - shell: []
