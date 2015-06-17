@@ -202,6 +202,7 @@ for_window [title="Friends$" class="Steam"] floating enable
 for_window [title="^Endless Space"] floating enable
 for_window [title="^Cities\: Skylines$"] floating enable
 for_window [title="^Remmina"] floating enable
+for_window [title="MiniMetro"] floating enable
 
 # host specific config
 ######################
