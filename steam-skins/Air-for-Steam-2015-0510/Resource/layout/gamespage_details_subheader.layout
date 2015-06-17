@@ -1,0 +1,110 @@
+"resource/layout/gamespage_details_subheader.layout"
+{
+	colors
+	{
+		GameDetailsSubHeader.HorizontalSpacing=10
+		GameDetailsSubHeader.VerticalMargin=100
+	}
+
+	styles
+	{
+		CDetailsGameSubHeaderPanel {
+			bgcolor=none
+		}
+
+		ClientListButton {
+			image=graphics/none
+			minimum-height=0 //reset for button height
+			inset-left=999 //remove default dropdown arrow
+			render_bg {
+				0="image( x0 + 3, y0 + 3, x1, y1, graphics/onfocus/game_cast )"
+			}
+		}
+
+		ClientListButton:hover {
+			image=graphics/none
+			render_bg {
+				0="image( x0 + 3, y0 + 3, x1, y1, graphics/onfocus/game_cast_hover )"
+			}
+		}
+
+		DetailsLaunchButton {
+			padding-left=0 padding-right=0
+			textcolor=none
+			render { }
+			render_bg {
+				0="image( x0, y0, x1, y1, graphics/onfocus/game_launch )"
+			}
+		}
+
+		DetailsLaunchButton:hover {
+			render_bg {
+				0="image( x0, y0, x1, y1, graphics/onfocus/game_launch_hover )"
+			}
+		}
+
+		DetailsInstallButton {
+			padding-left=0 padding-right=0
+			textcolor=none
+			render { }
+			render_bg {
+				0="image( x0, y0, x1, y1, graphics/onfocus/game_install )"
+			}
+		}
+
+		DetailsInstallButton:hover {
+			render_bg {
+				0="image( x0, y0, x1, y1, graphics/onfocus/game_install_hover )"
+			}
+		}
+
+		DetailsBuyButton {
+			padding-left=0 padding-right=0
+			textcolor=none
+			render { }
+			render_bg {
+				0="image( x0, y0, x1, y1, graphics/onfocus/game_install )"
+			}
+		}
+
+		DetailsBuyButton:hover {
+			render_bg {
+				0="image( x0, y0, x1, y1, graphics/onfocus/game_install_hover )"
+			}
+		}
+	}
+
+	layout
+	{
+		// Y offset here should match the vertical padding value above in the colors section
+		region { name="header" y=0 x=0 width=max height=max }
+
+		place {
+			control=subheaderlabels
+			region=header
+			dir=down
+			align=top-center
+			y=20
+		}
+
+		place {
+			control=clientlist //in-home streaming button
+			start=subheaderlabels
+			region=header
+			align=top-center
+			dir=down
+			height=30 width=30
+			y=4
+		}
+
+		place {
+			control=launchbutton
+			start=subheaderlabels
+			region=header
+			align=top-center
+			dir=down
+			height=50 width=50
+			y=40
+		}
+	}
+}

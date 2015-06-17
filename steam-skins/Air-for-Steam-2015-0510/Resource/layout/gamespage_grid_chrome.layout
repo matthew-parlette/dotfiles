@@ -1,0 +1,42 @@
+"resource/layout/gamespage_grid_chrome.layout"
+{
+	styles
+	{
+		GridItemChrome {
+			//bgcolor=Overlay.Background
+		}
+
+		ChromeBorderItem { }
+
+		GridNavDivider { }
+
+		CUILaunchButton {
+			padding-left=20 padding-right=20
+			textcolor=none
+			image=graphics/onfocus/game_launch
+			render { }
+			render_bg { }
+		}
+
+		CUILaunchButton:hover {
+			image=graphics/onfocus/game_launch_hover
+		}
+
+		"GameItem_Uninstalled CUILaunchButton" {
+			image=graphics/onfocus/game_install
+		}
+
+		"GameItem_Uninstalled CUILaunchButton:hover" {
+			image=graphics/onfocus/game_install_hover
+		}
+	}
+
+	layout
+	{
+		region { name="touchscreen" height=max x=0 y=0 align=top-center }
+		place { control="launch" region="touchscreen" height=max align=top-center }
+		place { control="chromeborder" width=max height=max }
+
+		place { control="divider,details" height=0 width=0 }
+	}
+}

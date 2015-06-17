@@ -9,6 +9,9 @@
       - "ls ~/.themes || mkdir ~/.themes;tar xvfz MediterraneanNight-2.03.tar.gz -C ~/.themes"
       - "Installing GTK themes"
     -
+      - "ls ~/.local/share/Steam || mkdir ~/.local/share/Steam"
+      - "Setting up Steam directory (if missing)"
+    -
       - "for SCRIPT in colors/*;do if [ -f $SCRIPT -a -x $SCRIPT ];then $SCRIPT;fi;done"
       - "Installing base16 gnome colors"
     -
@@ -26,6 +29,7 @@
     - "~/.fonts"
     - "~/.vim"
     - "~/.vimrc"
+    - "~/.local/share/Steam/skins"
 - link:
     ~/.bashrc: bashrc
     ~/.liquidprompt: liquidprompt
@@ -39,4 +43,5 @@
     ~/.fonts: fonts
     ~/.vim: vim
     ~/.vimrc: vimrc
+    ~/.local/share/Steam/skins: steam-skins
 - shell: []

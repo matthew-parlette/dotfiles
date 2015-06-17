@@ -1,0 +1,15 @@
+"resource/layout/subpaneloptionsbrowser.layout"
+{
+	styles {
+	}
+
+	layout {
+		place { control=DescriptionLabel 				width=max }
+		place { control=OverlayHomePageLabel 		start=DescriptionLabel dir=down y=30 }
+		place { control=OverlayHomePage 					start=OverlayHomePageLabel width=max dir=down y=5 }
+
+		place { control=ClearAllCookiesButton 		start=OverlayHomePage dir=down y=30 }
+
+		place { control=Divider1 height=0 width=0 }
+	}
+}

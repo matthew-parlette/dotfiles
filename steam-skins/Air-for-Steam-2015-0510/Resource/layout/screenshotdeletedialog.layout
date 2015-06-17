@@ -1,0 +1,21 @@
+"resource/layout/screenshotdeletedialog.layout"
+{
+	styles {
+		ScreenshotDeleteDialog {
+			minimum-width=325
+			minimum-height=200
+		}
+	}
+
+	layout {
+		region { name=box height=max width=max margin-right=26 margin-left=26 }
+
+		place { region=box control=WarningText y=60 width=max }
+		place { region=box control=DeleteFromCloudBox start=WarningText dir=down y=10 }
+
+		region { name=buttons region=box align=bottom height=40 }
+		place { control=Delete,Cancel region=buttons align=right spacing=10 }
+
+		place { control=Warning height=0 width=0 }
+	}
+}

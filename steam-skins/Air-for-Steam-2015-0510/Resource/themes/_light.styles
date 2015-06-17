@@ -1,0 +1,50 @@
+light.styles {
+
+	include "resource/styles/_vars.styles"
+
+	colors {
+		A2.Background						"Air235"							//client bg
+		A2.Ribbon								"Air205"							//bg for section emphasis (ie. left side of settings dialog)
+		A2.Divider							"Air190"							//client dividers
+		A2.Notification					"Air50"								//bg for download notification
+		A2.Bar									"Air110"							//bg for greater section emphasis (ie. voice chat and trade notifications)
+		A2.Menu									"A2.Bar"							//menu bg
+		A2.MenuDivider					"Air130"							//menu dividers
+
+		Button.Hover						"155 155 155 50"			//button bg on hover
+		Button.Pressed					"155 155 155 100"			//button bg on click
+
+		Scroll.Std							"Air180"							//scrollbar handle
+		Scroll.Hover						"Air155"							//scrollbar handle on hover
+		Scroll.Gutter						"A2.Ribbon"						//scrollbar gutter/backdrop
+
+		Text.Primary						"Air35"								//black 87%, text
+		Text.Secondary					"Air115"							//black 54%, caption
+		Text.Label							"Air155"							//black 39%, label
+		Text.Hint								"Air190"							//black 26%, hint text, disabled items
+		Text.Black							"Black"								//black text
+		Text.BlackHover					"0 0 0 220"						//hover
+		Text.White							"White"								//white text
+		Text.WhiteHover					"255 255 255 220"			//hover
+
+		Text.OnFocus						"Air255"							//text color on focus color (header)
+		Text.OnFocusHover				"255 255 255 210"			//hover
+		Text.Notification				"Air255"							//text color of a notification
+		Text.NotificationSoft		"255 255 255 210"			//softer text color on notification (also used for hover)
+		Text.Selected						"Air255"							//selected text color (usually on focus2)
+
+		Text.Overlay						"Air255"							//overlay text color
+		Text.OverlaySoft				"Air210"							//softer overlay text color (also used for hover)
+
+		Friends.Online					"103 161 184 255"			//friend online text
+		Friends.InGame					"117 165 112 255"			//friend in-game text
+		Friends.Offline					"Text.Label"					//friend offline text
+
+		Chat.Friend							"Text.Primary"				//chat window friend text
+		Chat.Self								"Text.Secondary"			//chat window self text
+		Chat.History						"Text.Label"					//chat window history text
+
+		Details.Background			"184 184 184 150"			//games details semi-transparent overlay on top of screenshots, resolves into A2.Ribbon
+		Overlay.Background			"50 50 50 150"				//overlay bg
+	}
+}

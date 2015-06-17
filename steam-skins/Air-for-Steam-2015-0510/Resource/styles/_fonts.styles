@@ -1,0 +1,611 @@
+fonts.styles {
+
+	colors [$WINDOWS||$LINUX] {
+		basefont		"Roboto"
+		condensed		"Roboto Condensed"
+		medium			"Roboto Medium"
+	}
+
+	colors [$OSX] {
+		basefont		"Roboto Regular"
+		condensed		"Roboto Condensed Regular"
+		medium			"Roboto Medium"
+	}
+
+	styles {
+	//Title					22px, 400, condensed, text.white, regular					//
+
+	//Body					16px, 400, basefont, text.primary, regular				//
+	//Caption				16px, 400, basefont, text.secondary, regular			//
+	//Subhead (up)	16px, 500, medium, text.primary, UPPERCASE				//
+	//Subhead				18px, 500, medium, text.secondary, regular				//
+	//Headline			40px, 700, condensed, text.secondary, UPPERCASE		//
+	//Display				60px, 400, condensed, text.secondary, regular			//
+
+	//Notification	16px, 500, medium, text.white, regular						//
+	//Button				16px, 700, basefont, focus, UPPERCASE							//
+
+	//-------------------------------------------------------------------------------------------------------------------------------//
+	//-------------------------------------------------------------------------------------------------------------------------------//
+
+	Panel {
+		font-family=basefont font-size=16 font-weight=400 textcolor=Text.Primary font-style=regular
+		selectedtextcolor=Text.Primary
+	}
+
+	nameInstanceStyle
+		{ textcolor=Friends.Offline }
+		//friend alias color
+
+	inviteLinkStyle
+		{ textcolor=focus }
+		//friend invitation accept/block/ignore links
+
+//namestyle { }
+//statusStyle { }
+//controlPanelLinkStyle { }
+
+	//-------------------------------------------------------------------------------------------------------------------------------//
+	//-------------------------------------------------------------------------------------------------------------------------------//
+
+//Labels
+
+	Label {
+		font-family=basefont font-size=16 font-weight=400 textcolor=Text.Primary font-style=regular
+		selectedtextcolor=Text.Primary
+	}
+
+	"ToolWindow Label"
+		{ font-family=basefont font-size=16 font-weight=400 textcolor=Text.Secondary font-style=regular }
+		//"Last message received..." text
+
+	"CFriendsDialog Label"
+		{ textcolor=Text.Label }
+		// friends list offline/disconnected msg !!ALSO CONNECTED TO "2 IN GAME, 2 ONLINE" text
+
+	"CFriendsDialog Panel"
+		{ textcolor=Text.Secondary }
+		//friends list section header
+
+	"ToolWindow Panel"
+		{ textcolor=Text.Secondary }
+		//group chat mini-friends list section header
+
+	ListPanelSectionHeader
+		{ font-family=basefont font-size=16 font-weight=400 textcolor=Text.Label font-style=regular }
+
+	SectionHeaderStyleLabel
+		{ font-family=basefont font-size=16 font-weight=400 textcolor=Text.Label font-style=regular }
+		//downloads page section header
+
+	URLLabel
+		{ font-family=basefont font-size=16 font-weight=400 textcolor=Focus font-style=regular }
+
+	URLLabelSimple
+		{ font-family=basefont font-size=16 font-weight=400 textcolor=Focus font-style=regular }
+
+	URLBarSecure
+		{ textcolor=html.secureurl }
+
+	URLBarBrokenSecure
+		{ textcolor=html.insecureurl }
+
+	//-------------------------------------------------------------------------------------------------------------------------------//
+	//-------------------------------------------------------------------------------------------------------------------------------//
+
+//Rich Text
+
+	RichText {
+		font-family=basefont font-size=16 font-weight=400 textcolor=Text.Primary font-style=regular
+		selectedtextcolor=Text.Selected
+		selectedbgcolor=Focus2
+	}
+
+	"RichText bold"
+		{ font-family=medium }
+
+	"RichText emphasis"
+		{ font-style=italic }
+
+	"RichText url"
+		{ textcolor=Focus }
+
+	friends_chat_text
+		{ textcolor=Chat.Friend }
+
+	friends_chat_text_self
+		{ textcolor=Chat.Self }
+
+	friends_chat_history
+		{ textcolor=Chat.History }
+
+	friends_chat_bright_event
+		{ font-family=medium }
+
+	friends_chat_url
+		{ font-style=underline }
+
+	friends_chat_name_ingame
+		{ textcolor=Friends.InGameColor }
+
+	friends_chat_name
+	{ textcolor=Friends.OnlineColor }
+
+//friends_chat_event { }
+//friends_chat_self { }
+//friends_chat_accountid { }
+
+//"ChatListPanel RichText" { } //chat window font size
+
+	//-------------------------------------------------------------------------------------------------------------------------------//
+	//-------------------------------------------------------------------------------------------------------------------------------//
+
+//Text Entry
+
+	TextEntry {
+		font-family=basefont font-size=16 font-weight=400 textcolor=Text.Secondary font-style=regular
+		selectedtextcolor=Text.Selected
+		selectedbgcolor=Focus2
+		shadowtextcolor=Text.Primary //cursor color
+
+		//READ ME IF YOU ARE CHANGING TEXTENTRY STYLES
+		//To update TextEntry in Settings > In-Game Overlay & Screenshot shortcut keys
+		//match resource/steamscheme.res Font "Default" to the TextEntry style above
+	}
+
+	TextEntry:focus
+		{ textcolor=Text.Primary }
+
+	TextEntry:disabled
+		{ textcolor=Text.Hint }
+
+	TextEntry:empty
+		{ textcolor=Text.Hint }
+
+	TextEntryURL {
+		font-family=basefont font-size=16 font-weight=400 textcolor=Text.OnFocus font-style=regular
+		selectedtextcolor=Text.Selected
+		selectedbgcolor=Focus2
+
+		//url strings from htmlpopup
+	}
+
+	"CSettingsSubFriends TextEntry"
+		{ font-family=condensed font-size=40 font-weight=700 textcolor=Focus font-style=regular }
+
+	//-------------------------------------------------------------------------------------------------------------------------------//
+	//-------------------------------------------------------------------------------------------------------------------------------//
+
+//List Panels
+
+	ListPanel {
+		font-family=basefont font-size=16 font-weight=400 textcolor=Text.Primary font-style=regular
+		selectedtextcolor=Text.Primary
+	}
+
+	SectionedListPanel {
+		font-family=basefont font-size=16 font-weight=400 textcolor=Text.Primary font-style=regular
+		selectedtextcolor=Text.Primary
+	}
+
+//GameColumn_BigText { } //game name in list mode
+
+	GameItem_Uninstalled
+		{ textcolor=Text.Secondary selectedtextcolor=Text.Secondary }
+
+	GameItem_Installed
+		{ textcolor=Text.Primary selectedtextcolor=Text.Primary }
+
+	GameItem_Shortcut
+		{ textcolor=Text.Primary selectedtextcolor=Text.Primary }
+
+	GameItem_Mod
+		{ textcolor=Text.Primary selectedtextcolor=Text.Primary }
+
+	GameItem_Updating
+		{ textcolor=Focus2 selectedtextcolor=Focus2 }
+
+	GameItem_Decrypting
+		{ textcolor=Focus2 selectedtextcolor=Focus2 }
+
+	GameItem_Syncing
+		{ textcolor=Focus2 selectedtextcolor=Focus2 }
+
+	DLC_Uninstalled
+		{ textcolor=Text.Secondary selectedtextcolor=Text.Secondary } //details dlc panel
+
+	DLC_Installed
+		{ textcolor=Text.Primary selectedtextcolor=Text.Primary } //details dlc panel
+
+	//-------------------------------------------------------------------------------------------------------------------------------//
+	//-------------------------------------------------------------------------------------------------------------------------------//
+
+//Buttons/Controls
+
+	Button
+		{ font-family=basefont font-size=16 font-weight=700 textcolor=Focus font-style=uppercase }
+
+	Button:disabled
+		{ textcolor=Text.Hint }
+
+	"CSettingsSubStreamingAdvancedClient URLLabel"
+		{ font-family=basefont font-size=16 font-weight=700 textcolor=Focus font-style=uppercase }
+		//spoof a button
+
+	"CSettingsSubStreamingAdvancedHost URLLabel"
+		{ font-family=basefont font-size=16 font-weight=700 textcolor=Focus font-style=uppercase }
+		//spoof a button
+
+//ToggleButton { }
+
+	PageTab
+		{ font-family=basefont font-size=16 font-weight=700 textcolor=Text.OnFocus font-style=uppercase }
+
+	PageTab:hover
+		{ textcolor=Text.OnFocus }
+
+	PageTab:selected
+		{ textcolor=Text.OnFocusHover }
+
+	PageTab:selected:hover
+		{ textcolor=Text.OnFocusHover }
+
+	"CFriendsDialog PageTab:selected"
+		{ textcolor=Text.OnFocusHover }
+		//mimic ListPanelColumnHeader
+
+	"CGamePropertiesDialog PageTab:selected"
+		{ textcolor=Text.OnFocusHover }
+		//mimic ListPanelColumnHeader
+
+	ListPanelColumnHeader
+		{ font-family=basefont font-size=16 font-weight=700 textcolor=Text.OnFocus font-style=uppercase }
+
+	ListPanelColumnHeader:hover
+		{ textcolor=Text.OnFocusHover }
+
+	ControlButton
+		{ font-family=basefont font-size=16 font-weight=700 textcolor=Text.Notification font-style=uppercase }
+
+	Chat_MenuButton_withChrome
+		{ font-family=basefont font-size=16 font-weight=700 textcolor=Text.Notification font-style=uppercase }
+
+	"CScreenshotManager Button"
+		{ font-family=basefont font-size=16 font-weight=700 textcolor=Text.Notification font-style=uppercase }
+
+	ComboBox {
+		font-family=basefont font-size=16 font-weight=700 textcolor=Focus font-style=uppercase
+		selectedtextcolor=Focus //text color on focus, keep same as textcolor
+	}
+
+	CheckButton
+		{ font-family=basefont font-size=16 font-weight=400 textcolor=Text.Primary font-style=regular }
+
+	CheckButton:disabled
+		{ textcolor=Text.Hint }
+
+	RadioButton
+		{ font-family=basefont font-size=16 font-weight=400 textcolor=Text.Primary font-style=regular }
+
+	//-------------------------------------------------------------------------------------------------------------------------------//
+	//-------------------------------------------------------------------------------------------------------------------------------//
+
+//Notifications
+
+	"TooltipWindow Label"
+		{ font-family=medium font-size=16 font-weight=500 textcolor=Text.Notification font-style=regular }
+
+	tooltip_headline
+		{ font-family=medium font-size=18 font-weight=500 textcolor=Text.Notification font-style=regular }
+
+	friends_offline
+		{ textcolor=Friends.Offline }
+
+	friends_online
+		{ textcolor=Friends.Online }
+
+	friends_ingame
+		{ textcolor=Friends.InGame }
+
+	friends_ignored
+		{ textcolor=Friends.Offline }
+
+	StatusLabelDim
+		{ font-family=medium font-size=16 font-weight=500 textcolor=Text.Notification font-style=regular }
+		//floating download status notification
+
+	friends_chat_securitylink
+		{ font-family=medium font-size=16 font-weight=500 textcolor=Focus font-style=regular }
+
+//"CTradeInviteBar Label" { } //trade invite
+//"CVoiceBar Label" { } //voice chat
+//"CGameInviteBar Label" { } //gmae invite
+
+	"CSteamRootDialog soft"
+		{ font-family=medium font-size=16 font-weight=500 textcolor=Text.NotificationSoft font-style=regular }
+		//email reminder bar
+
+	"CSteamRootDialog bright"
+		{ font-family=medium font-size=16 font-weight=500 textcolor=Text.Notification font-style=regular }
+		//email reminder bar
+
+	support_alert
+		{ font-family=medium font-size=16 font-weight=500 textcolor=Text.Notification font-style=regular }
+
+	FindEntry {
+		font-family=medium font-size=16 font-weight=500 textcolor=Text.Notification font-style=regular
+		shadowtextcolor=Text.Notification
+	}
+
+	//-------------------------------------------------------------------------------------------------------------------------------//
+	//-------------------------------------------------------------------------------------------------------------------------------//
+
+//Details
+
+	headertextlarge
+	{ font-family=condensed font-size=50 font-weight=400 textcolor=Text.White font-style=regular }
+
+	"CGamesPage_Details headertext"
+		{ font-family=medium font-size=18 font-weight=500 textcolor=Text.White font-style=regular }
+
+	"CGamesPage_Details headertext-red"
+		{ font-family=medium font-size=18 font-weight=500 textcolor=Text.White font-style=regular }
+
+	"CGamesPage_Details headertext-green"
+		{ font-family=medium font-size=18 font-weight=500 textcolor=Text.White font-style=regular }
+
+	"CGamesPage_Details headertext-blue"
+		{ font-family=medium font-size=18 font-weight=500 textcolor=Text.White font-style=regular }
+
+	valuetext
+		{ font-family=basefont font-size=16 font-weight=500 textcolor=Text.White font-style=regular }
+
+	rightcolumnlink
+		{ font-family=basefont font-size=16 font-weight=400 textcolor=Text.OnFocus font-style=regular }
+
+	rightcolumnlink:hover
+		{ textcolor=Text.OnFocusHover }
+
+	rightcolumntag
+		{ font-family=basefont font-size=16 font-weight=400 textcolor=Text.OnFocus font-style=regular }
+
+	gamedetails-headerlabel
+		{ font-family=condensed font-size=40 font-weight=700 textcolor=Focus font-style=uppercase }
+
+	gamedetails-headerlabel-red
+		{ font-family=condensed font-size=40 font-weight=700 textcolor=Focus font-style=uppercase }
+
+	gamedetails-headerlabel-green
+		{ font-family=condensed font-size=40 font-weight=700 textcolor=Focus font-style=uppercase }
+
+	gamedetails-headerlabel-blue
+		{ font-family=condensed font-size=40 font-weight=700 textcolor=Focus font-style=uppercase }
+
+	workshop_description
+		{ font-family=medium font-size=18 font-weight=500 textcolor=Text.Primary font-style=regular }
+
+	communityfile_name
+		{ font-family=basefont font-size=16 font-weight=400 textcolor=Text.Secondary font-style=regular }
+
+	mostrecent_label
+		{ font-family=medium font-size=18 font-weight=500 textcolor=Text.Primary font-style=regular }
+
+	mostrecent_unlockedsofar
+		{ font-family=basefont font-size=16 font-weight=400 textcolor=Text.Secondary font-style=regular }
+
+	everythinglabel
+		{ font-family=medium font-size=18 font-weight=500 textcolor=Text.Primary font-style=regular }
+
+	infolabel
+		{ font-family=medium font-size=18 font-weight=500 textcolor=Text.Primary font-style=regular }
+
+	title_label
+		{ font-family=medium font-size=18 font-weight=500 textcolor=Text.Primary font-style=regular }
+
+	date_and_author
+		{ font-family=basefont font-size=16 font-weight=400 textcolor=Text.Secondary font-style=regular }
+
+	//-------------------------------------------------------------------------------------------------------------------------------//
+	//-------------------------------------------------------------------------------------------------------------------------------//
+
+//Music
+
+	ArtistStyle
+		{ font-family=condensed font-size=40 font-weight=700 textcolor=Focus font-style=uppercase }
+
+	PlaylistTitleStyle
+		{ font-family=condensed font-size=40 font-weight=700 textcolor=Focus font-style=uppercase }
+
+	PositionLabelStyle
+		{ font-family=basefont font-size=16 font-weight=400 textcolor=Text.Secondary font-style=regular } //tracklist num
+
+	TrackLabelStyle
+		{ font-family=basefont font-size=16 font-weight=400 textcolor=Text.Primary font-style=regular } //tracklist name
+
+	TracksInfoStyle
+		{ font-family=basefont font-size=16 font-weight=400 textcolor=Text.Secondary font-style=uppercase }
+
+	//-------------------------------------------------------------------------------------------------------------------------------//
+	//-------------------------------------------------------------------------------------------------------------------------------//
+
+//Downloads
+
+	bigtextlabel
+		{ font-family=medium font-size=16 font-weight=500 textcolor=Text.OnFocusHover font-style=uppercase }
+
+	bigtext
+		{ font-family=medium font-size=16 font-weight=500 textcolor=Text.OnFocus font-style=uppercase }
+
+	throttleLabel
+		{ font-family=medium font-size=16 font-weight=500 textcolor=Text.OnFocusHover font-style=uppercase }
+
+	throttleValue
+		{ font-family=medium font-size=16 font-weight=500 textcolor=Text.OnFocus font-style=uppercase }
+
+	"CSteamRootDialog ModuleHeading"
+		{ font-family=condensed font-size=40 font-weight=700 textcolor=Focus font-style=uppercase }
+
+	"CSteamRootDialog ModuleHeading2"
+		{ font-family=condensed font-size=40 font-weight=700 textcolor=Text.Label font-style=uppercase }
+
+	"CSteamRootDialog SectionedListPanel label"
+		{ font-family=basefont font-size=16 font-weight=400 textcolor=Text.Primary font-style=regular }
+
+	"CSteamRootDialog SectionedListPanel label2"
+		{ font-family=basefont font-size=16 font-weight=400 textcolor=Text.Secondary font-style=regular }
+
+	settingslink
+		{ font-family=basefont font-size=16 font-weight=700 textcolor=Focus font-style=uppercase }
+
+	PauseButton
+		{ font-family=basefont font-size=16 font-weight=700 textcolor=Text.OnFocus font-style=uppercase }
+
+	ResumeButton
+		{ font-family=basefont font-size=16 font-weight=700 textcolor=Text.OnFocus font-style=uppercase }
+
+	links
+		{ font-family=basefont font-size=16 font-weight=700 textcolor=Focus font-style=uppercase } //view news button
+
+	//-------------------------------------------------------------------------------------------------------------------------------//
+	//-------------------------------------------------------------------------------------------------------------------------------//
+
+//Screenshots
+
+	gameselector {
+		font-family=condensed font-size=22 font-weight=400 textcolor=Text.OnFocus font-style=regular
+		selectedtextcolor=Text.OnFocus //text color on focus, keep same as textcolor
+	}
+
+	CScreenshotCaptionEntry:empty
+		{ textcolor=Text.Secondary }
+
+	publishcharsleft
+		{ font-family=basefont font-size=16 font-weight=400 textcolor=Text.Label font-style=regular }
+
+	//-------------------------------------------------------------------------------------------------------------------------------//
+	//-------------------------------------------------------------------------------------------------------------------------------//
+
+//Main Client
+
+	CUINavButton
+		{ font-family=condensed font-size=22 font-weight=400 textcolor=Text.OnFocus font-style=regular }
+
+	CUINavButton:selected
+		{ textcolor=Text.OnFocusHover }
+
+	NavLabel2
+		{ font-family=basefont font-size=16 font-weight=700 textcolor=Text.OnFocus font-style=uppercase }
+		//small mode games filter
+
+	NavLabel2:hover
+		{ textcolor=Text.OnFocusHover }
+
+	NavLabel2:selected
+		{ textcolor=Text.OnFocusHover }
+
+	LibrarySearch {
+		font-family=condensed font-size=22 font-weight=400 textcolor=Text.OnFocus font-style=regular
+		shadowtextcolor=Text.OnFocus //cursor color
+		selectedbgcolor=Focus2
+	}
+
+	FriendsSearch {
+		font-family=condensed font-size=22 font-weight=400 textcolor=Text.OnFocus font-style=regular
+		shadowtextcolor=Text.OnFocus //cursor color
+		selectedbgcolor=Focus2
+	}
+
+	"CMusicPlayerPanel StatusStyle"
+		{ font-family=condensed font-size=22 font-weight=400 textcolor=Text.OnFocus font-style=regular }
+		//track name in mini-player, mimic CUINavButton
+
+	AccountBalanceStyle
+		{ font-family=condensed font-size=18 font-weight=700 textcolor=Text.OnFocus font-style=regular }
+
+	online_friends
+		{ font-family=condensed font-size=18 font-weight=700 textcolor=Text.OnFocus font-style=regular }
+
+	//-------------------------------------------------------------------------------------------------------------------------------//
+	//-------------------------------------------------------------------------------------------------------------------------------//
+
+//Menus
+
+	MenuItem
+		{ font-family=medium font-size=16 font-weight=500 textcolor=Text.Notification font-style=regular }
+
+	MenuItem:disabled
+		{ textcolor=Text.Hint }
+
+	MenuItem:disabled:hover
+		{ textcolor=Text.Hint }
+
+	//-------------------------------------------------------------------------------------------------------------------------------//
+	//-------------------------------------------------------------------------------------------------------------------------------//
+
+//Overlay
+
+	taskbar
+		{ font-family=condensed font-size=30 font-weight=700 textcolor=Text.Overlay font-style=uppercase } //in overlaytaskbar
+
+	taskbar:hover
+		{ textcolor=Text.OverlaySoft }
+
+	ViewersTextStyle
+		{ font-family=medium font-size=18 font-weight=500 textcolor="144 153 161 255" font-style=regular }
+		//broadcast viewer text
+
+	//-------------------------------------------------------------------------------------------------------------------------------//
+	//-------------------------------------------------------------------------------------------------------------------------------//
+
+//Misc
+
+	EmoticonMenuItemStyle
+		{ font-size=20 textcolor=Text.Notification }
+
+	SettingsList {
+		font-family=medium font-size=18 font-weight=500 textcolor=Text.Notification font-style=regular
+		selectedtextcolor=Focus
+		selectedbgcolor=none
+	}
+
+	"CDialogGameInfo TextEntry"
+		{textcolor=Text.Primary }
+		//spoof label text
+
+	"CDialogGameInfo LabelDull"
+		{textcolor=Text.Secondary }
+
+	"CServerBrowserDialog status"
+		{ textcolor=Text.Label }
+
+	"CSettingsSubStreaming ListPanelSectionHeader"
+		{ font-family=medium font-size=16 font-weight=500 textcolor=Text.Label font-style=regular }
+
+	CloudUsageLabelStyle
+		{ textcolor=Text.Label }
+		//game properties > updates
+
+	"CDialogParentalUnlock Password"
+		{ font-size=40 }
+
+	IntroHeading
+		{ font-family=medium font-size=18 font-weight=500 textcolor=Text.Primary font-style=regular }
+		//from broadcast_firsttime.layout
+
+	"HTML label"
+		{ font-family=medium font-size=16 font-weight=500 textcolor=Text.Notification font-style=regular }
+		//from htmlfindbar.layout
+
+	IMEEntry
+		{ font-size=18 }
+		//from htmlimebar.layout, vary font size for legibility in CJK languages
+
+	emptylisttext
+		{ textcolor=none selectedtextcolor=none }
+		//search results empty
+
+	TreeNodeText
+		{ font-family=Arial font-size=13 textcolor=Text.Primary selectedtextcolor=Text.White selectedbgcolor=Focus2 }
+
+	}
+}
