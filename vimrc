@@ -21,3 +21,6 @@ set hlsearch
 
 " Indenting
 filetype plugin indent on
+
+" For salt-vim
+set nocompatible
