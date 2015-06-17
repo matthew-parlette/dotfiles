@@ -92,18 +92,18 @@ i3-msg Workspace 3: terminal
 # i3-msg focus left
 i3-msg split v
 start "gnome-terminal -t byobu -x ssh pegasus"
-wait_for_title "matt@pegasus.* - byobu"
+wait_for_title "matt@pegasus.*"
 sleep 2
 
 # 4: dev
 i3-msg Workspace 4: dev
 current_project="~/src/space-sim"
-start "atom $current_project"
-wait_for_title "Atom"
+# start "atom $current_project"
+# wait_for_title "Atom"
 # i3-msg split h
 # dex /usr/share/applications/byobu.desktop
 # wait_for_title "byobu"
-sleep 2
+# sleep 2
 
 # 5: chat
 i3-msg Workspace 5: chat
@@ -135,3 +135,6 @@ i3-msg Workspace 3: terminal
 # re-enable mouse
 # xinput set-prop $mouseID "Device Enabled" 1
 # xinput set-prop $touchID "Device Enabled" 1
+
+# restart i3 so the bars are correct (multi-monitor issue)
+i3-msg restart
