@@ -1,6 +1,6 @@
 - shell:
     -
-      - "git submodule update --init --remote --force dotbot liquidprompt"
+      - "git submodule update --init --remote --force --recursive"
       - "Updating submodules"
     -
       - "i3/create-config"
