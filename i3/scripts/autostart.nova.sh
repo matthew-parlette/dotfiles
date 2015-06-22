@@ -42,6 +42,9 @@ wait_for_title () {
 # xdg autostart (/etc/xdg/autostart and ~/.config/autostart)
 dex -ae i3
 
+# This needs to be started so Software Center works properly
+/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
+
 # redshift
 redshift-gtk &
 
