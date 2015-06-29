@@ -205,6 +205,7 @@ for_window [window_role="pop-up"] floating enable
 ### title: _NET_WM_NAME or WM_NAME
 # for_window [title="Hangouts"] move container to workspace $chat
 for_window [title="Chat$" class="Steam"] floating enable
+for_window [title="Hangouts is sharing your screen"] floating enable
 for_window [title="Friends$" class="Steam"] floating enable
 for_window [title="^Endless Space"] floating enable
 for_window [title="^Cities\: Skylines$"] floating enable
