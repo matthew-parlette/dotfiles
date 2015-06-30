@@ -100,13 +100,16 @@ sleep 2
 
 # 4: dev
 i3-msg Workspace 4: dev
-current_project="~/src/space-sim"
+# current_project="~/src/space-sim"
 # start "atom $current_project"
 # wait_for_title "Atom"
 # i3-msg split h
 # dex /usr/share/applications/byobu.desktop
 # wait_for_title "byobu"
 # sleep 2
+start "gnome-terminal -t cmatrix -x 'cmatrix -a -s'"
+wait_for_title "cmatrix"
+sleep 2
 
 # 5: chat
 i3-msg Workspace 5: chat
@@ -132,8 +135,9 @@ sleep 2
 # i3-msg split v
 # sleep 2
 
-# return to 3: terminal
+# return to 3: terminal and 4: dev
 i3-msg Workspace 3: terminal
+i3-msg Workspace 4: dev
 
 # re-enable mouse
 # xinput set-prop $mouseID "Device Enabled" 1
