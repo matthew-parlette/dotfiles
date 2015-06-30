@@ -107,7 +107,7 @@ i3-msg Workspace 4: dev
 # dex /usr/share/applications/byobu.desktop
 # wait_for_title "byobu"
 # sleep 2
-start "gnome-terminal -t cmatrix -x 'cmatrix -a -s'"
+start "gnome-terminal -t cmatrix -x 'cmatrix -a -s -u 6'"
 wait_for_title "cmatrix"
 sleep 2
 
@@ -129,11 +129,12 @@ sleep 2
 # fi
 
 # 8: audio
-# i3-msg Workspace 8: audio
+i3-msg Workspace 8: audio
+start "anoise &"
 # start "gnome-terminal -t pianobar -x pianobar"
-# wait_for_title "pianobar"
+wait_for_title "anoise"
 # i3-msg split v
-# sleep 2
+sleep 2
 
 # return to 3: terminal and 4: dev
 i3-msg Workspace 3: terminal
