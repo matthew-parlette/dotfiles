@@ -107,8 +107,7 @@ i3-msg Workspace 4: dev
 # dex /usr/share/applications/byobu.desktop
 # wait_for_title "byobu"
 # sleep 2
-start "gnome-terminal -t cmatrix -x 'cmatrix -a -s -u 6'"
-wait_for_title "cmatrix"
+start "gnome-terminal"
 sleep 2
 
 # 5: chat

@@ -26,33 +26,37 @@ workspace $9 output DVI-D-0
 # DVI-I-1: Left
 # DVI-D-0: Middle
 # HDMI-0:  Right
-bar {
-        output DVI-I-1
-        position top
-        status_command i3blocks
-        colors {
-            background #232323
-            statusline #DCDCDC
-        }
-}
+# bar {
+#         output DVI-I-1
+#         position top
+#         status_command i3blocks
+#         colors {
+#             background #232323
+#             statusline #DCDCDC
+#         }
+# }
 bar {
         output DVI-D-0
         position top
         status_command i3blocks
         colors {
-            background #232323
-            statusline #DCDCDC
+            background #303030
+            statusline #be643c
+            # active_workspace #76c7b7
+            # focused_workspace #000000 #000000 #a1c659
+            # inactive_workspace  #000000 #000000 #e0e0e0
+            # urgent_workspace  #000000 #000000 #fb0120
         }
 }
-bar {
-        output HDMI-0
-        position top
-        status_command i3blocks
-        colors {
-            background #232323
-            statusline #DCDCDC
-        }
-}
+# bar {
+#         output HDMI-0
+#         position top
+#         status_command i3blocks
+#         colors {
+#             background #232323
+#             statusline #DCDCDC
+#         }
+# }
 
 # custom keybinds for logitech k800
 ## f1 - home

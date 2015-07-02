@@ -23,6 +23,7 @@
     - "~/.liquidprompt"
     - "~/.irssi"
     - "~/.i3"
+    - "~/.i3blocks.conf"
     - "~/.gtkrc-2.0"
     - "~/.config/gtk-3.0"
     - "~/.config/pystromo"
@@ -36,6 +37,7 @@
     ~/.dotfiles: ''
     ~/.irssi: irssi
     ~/.i3: i3
+    ~/.i3blocks.conf: i3blocks.conf
     ~/.config/gtk-3.0: gtk-3.0
     ~/.config/pystromo: pystromo
     ~/.local/share/applications/google-chrome-personal.desktop: applications/google-chrome-personal.desktop
@@ -44,4 +46,7 @@
     ~/.vim: vim
     ~/.vimrc: vimrc
     ~/.local/share/Steam/skins: steam-skins
-- shell: []
+- shell:
+    -
+      - "fc-cache -f"
+      - "Reloading font cache
