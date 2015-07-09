@@ -9,7 +9,7 @@
       - "ls ~/.themes || mkdir ~/.themes;tar xvfz MediterraneanNight-2.03.tar.gz -C ~/.themes"
       - "Installing GTK themes"
     -
-      - "ls ~/.local/share/Steam || mkdir ~/.local/share/Steam"
+      - "ls ~/.local/share/Steam || mkdir -p ~/.local/share/Steam"
       - "Setting up Steam directory (if missing)"
     -
       - "for SCRIPT in colors/*;do if [ -f $SCRIPT -a -x $SCRIPT ];then $SCRIPT;fi;done"
