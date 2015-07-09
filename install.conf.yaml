@@ -49,4 +49,4 @@
 - shell:
     -
       - "fc-cache -f"
-      - "Reloading font cache
+      - "Reloading font cache"
