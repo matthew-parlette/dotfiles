@@ -12,17 +12,6 @@ MAXWAIT=30
 start() {
     eval "$@ &"                  # Handle arguments with whitspaces
     echo "$@ started, waiting for pid..."
-    # mypid=$!                # Pid of last background process
-    # for i in `seq $MAXWAIT` # count from 1 to MAXWAIT
-    # do
-    #     echo "waiting for pid $mypid..."
-    # 	if xdotool search --onlyvisible --pid $mypid; then
-    #         echo "pid $mypid found, returning..."
-    # 	    return 0
-    # 	fi
-    # 	sleep 1
-    # done
-    # xmessage "Error on executing: $@" &
 }
 
 # wait for a class name to show up in i3 window list

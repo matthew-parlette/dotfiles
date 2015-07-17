@@ -2,7 +2,7 @@
 new_window pixel
 
 # rotate left monitor counter-clockwise
-exec xrandr --output DVI-I-1 --rotate left --output DVI-D-0 --right-of DVI-I-1 --output HDMI-0 --rotate left --right-of DVI-D-0
+exec xrandr --output DVI-I-1 --rotate left --output DVI-D-0 --right-of DVI-I-1 --output HDMI-0 --rotate left --right-of DVI-D-0 --output DVI-I-0 --right-of HDMI-0
 
 # workspace screens
 # DVI-I-1: Left
@@ -19,6 +19,8 @@ workspace $game output DVI-D-0
 workspace $vm output DVI-D-0
 workspace $audio output DVI-D-0
 workspace $9 output DVI-D-0
+
+workspace "11" output DVI-I-0
 
 # Override i3 bar for multi-monitor
 # bar config (i3blocks)
