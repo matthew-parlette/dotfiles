@@ -136,3 +136,8 @@ alias ddrpi='sudo dd bs=1M'
 ########
 
 source ~/.dotfiles/colors/base16-shell-bright.dark.sh
+
+# Minko
+#######
+
+export MINKO_HOME=/home/matt/src/minko
