@@ -42,6 +42,8 @@
     ~/.config/pystromo: pystromo
     ~/.local/share/applications/google-chrome-personal.desktop: applications/google-chrome-personal.desktop
     ~/.local/share/applications/google-chrome-work.desktop: applications/google-chrome-work.desktop
+    ~/.local/share/applications/chrome-app-list-personal.desktop: applications/chrome-app-list-personal.desktop
+    ~/.local/share/applications/chrome-app-list-work.desktop: applications/chrome-app-list-work.desktop
     ~/.fonts: fonts
     ~/.vim: vim
     ~/.vimrc: vimrc
