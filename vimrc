@@ -34,3 +34,6 @@ map <C-n> :NERDTreeToggle<CR>
 
 " Close vim if nerdtree is the only window left open
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+
+" Python formatting
+au Filetype python setl et ts=4 sw=4

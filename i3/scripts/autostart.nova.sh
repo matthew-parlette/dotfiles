@@ -12,17 +12,6 @@ MAXWAIT=30
 start() {
     eval "$@ &"                  # Handle arguments with whitspaces
     echo "$@ started, waiting for pid..."
-    # mypid=$!                # Pid of last background process
-    # for i in `seq $MAXWAIT` # count from 1 to MAXWAIT
-    # do
-    #     echo "waiting for pid $mypid..."
-    # 	if xdotool search --onlyvisible --pid $mypid; then
-    #         echo "pid $mypid found, returning..."
-    # 	    return 0
-    # 	fi
-    # 	sleep 1
-    # done
-    # xmessage "Error on executing: $@" &
 }
 
 # wait for a class name to show up in i3 window list
@@ -75,21 +64,6 @@ start "gnome-terminal -t byobu -x byobu"
 wait_for_title "matt@nova.* - byobu"
 sleep 2
 
-# terminal to matt-thinkpad
-# i3-msg Workspace 3: terminal
-# i3-msg split v
-## provide byobu as the title so it goes to the correct workspace
-# start "gnome-terminal -t byobu -x ssh matt-thinkpad"
-# wait_for_title "matt@matt-thinkpad.* - byobu"
-# sleep 2
-
-# terminal to enterprise-01
-# i3-msg Workspace 3: terminal
-# i3-msg split v
-# start "gnome-terminal -t byobu -x ssh enterprise-01"
-# wait_for_title "matt@enterprise-01.* - byobu"
-# sleep 2
-
 # terminal to pegasus
 i3-msg Workspace 3: terminal
 # i3-msg focus left
@@ -100,13 +74,6 @@ sleep 2
 
 # 4: dev
 i3-msg Workspace 4: dev
-# current_project="~/src/space-sim"
-# start "atom $current_project"
-# wait_for_title "Atom"
-# i3-msg split h
-# dex /usr/share/applications/byobu.desktop
-# wait_for_title "byobu"
-# sleep 2
 start "gnome-terminal"
 sleep 2
 
@@ -114,8 +81,8 @@ sleep 2
 i3-msg Workspace 5: chat
 # skype
 i3-msg split v
-start "gnome-terminal -t irssi -x irssi"
-wait_for_title "irssi"
+# start "gnome-terminal -t irssi -x irssi"
+# wait_for_title "irssi"
 sleep 2
 
 # 7: vm
@@ -129,9 +96,9 @@ sleep 2
 
 # 8: audio
 i3-msg Workspace 8: audio
-start "anoise &"
+dex /usr/share/applications/anoise.desktop
 # start "gnome-terminal -t pianobar -x pianobar"
-wait_for_title "anoise"
+# wait_for_title "anoise"
 # i3-msg split v
 sleep 2
 
