@@ -201,6 +201,7 @@ for_window [class="X3AP_main"] floating enable
 
 ### window_role: WM_WINDOW_ROLE
 for_window [window_role="pop-up"] floating enable
+for_window [window_role="bubble"] floating enable
 
 ### title: _NET_WM_NAME or WM_NAME
 # for_window [title="Hangouts"] move container to workspace $chat
