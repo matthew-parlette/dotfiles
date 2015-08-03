@@ -101,3 +101,7 @@ bindsym XF86AudioRaiseVolume exec --no-startup-id audio up && killall -SIGUSR1 i
 
 ## calculator
 bindsym XF86Calculator exec gnome-calculator
+
+# Keypad
+bindsym $mod+KP_1 exec dex ~/.local/share/applications/chrome-app-list-personal.desktop
+bindsym $mod+KP_2 exec dex ~/.local/share/applications/chrome-app-list-work.desktop
