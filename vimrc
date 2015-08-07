@@ -37,3 +37,16 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTree
 
 " Python formatting
 au Filetype python setl et ts=4 sw=4
+
+" Normal cursor color
+highlight Cursor guifg=white guibg=black
+" Inserting cursor color
+highlight iCursor guifg=white guibg=black
+" set guicursor=n-v-c:block-Cursor
+" set guicursor+=i:ver100-iCursor
+" set guicursor+=n-v-c:blinkon0
+" set guicursor+=i:blinkwait10
+
+" Color Scheme
+set background=dark
+colorscheme base16-bright
