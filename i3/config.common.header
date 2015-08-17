@@ -216,5 +216,7 @@ for_window [title="^Remmina"] floating enable
 for_window [title="MiniMetro"] floating enable
 for_window [title="^StarMade"] floating enable
 for_window [title="Kerbal Space Program"] floating enable
+for_window [title="^ReassemblySteam"] floating enable
+
 # host specific config
 ######################
