@@ -50,3 +50,5 @@ highlight iCursor guifg=white guibg=black
 " Color Scheme
 set background=dark
 colorscheme base16-bright
+highlight Normal ctermfg=white ctermbg=grey
+highlight Cursor ctermfg=white ctermbg=grey
