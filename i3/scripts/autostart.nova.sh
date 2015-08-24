@@ -47,7 +47,7 @@ feh --bg-fill --no-xinerama /home/matt/Pictures/wallpaper/nature/YS4_5968_69_70-
 # feh --bg-tile /home/matt/Pictures/wallpaper/pattern/stardust.png
 # feh --bg-scale /home/matt/Pictures/wallpaper/Night-city-street_1920x1080.jpg
 # earthbound background
-feh --bg-fill --no-xinerama ~/Pictures/wallpaper/nes/earthbound-onett.png
+feh --bg-fill ~/Pictures/wallpaper/nes/earthbound-onett.png
 
 # 1: Personal
 # 2: Work
