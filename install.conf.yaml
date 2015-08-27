@@ -44,6 +44,8 @@
     ~/.local/share/applications/google-chrome-work.desktop: applications/google-chrome-work.desktop
     ~/.local/share/applications/chrome-app-list-personal.desktop: applications/chrome-app-list-personal.desktop
     ~/.local/share/applications/chrome-app-list-work.desktop: applications/chrome-app-list-work.desktop
+    ~/.local/share/applications/taco-personal.desktop: applications/taco-personal.desktop
+    ~/.local/share/applications/taco-work.desktop: applications/taco-work.desktop
     ~/.fonts: fonts
     ~/.vim: vim
     ~/.vimrc: vimrc
