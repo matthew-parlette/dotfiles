@@ -10,8 +10,7 @@ exec xrandr --output DVI-I-1 --rotate left --output DVI-D-0 --right-of DVI-I-1 -
 # HDMI-0:  Right
 workspace $personal output DVI-I-1
 workspace $work output DVI-I-1
-
-workspace $terminal output HDMI-0
+workspace 11 output DVI-I-1
 
 workspace $dev output DVI-D-0
 workspace $chat output DVI-D-0
@@ -19,8 +18,10 @@ workspace $game output DVI-D-0
 workspace $vm output DVI-D-0
 workspace $audio output DVI-D-0
 workspace $9 output DVI-D-0
+workspace 12 output DVI-D-0
 
-workspace "11" output DVI-I-0
+workspace $terminal output HDMI-0
+workspace 13 output HDMI-0
 
 # Override i3 bar for multi-monitor
 # bar config (i3blocks)
