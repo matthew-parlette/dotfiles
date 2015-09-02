@@ -1,5 +1,6 @@
 " Use Pathogen for plugins
 execute pathogen#infect()
+execute pathogen#helptags()
 
 " Syntax highlighting
 syntax on
@@ -52,3 +53,6 @@ set background=dark
 colorscheme base16-bright
 highlight Normal ctermfg=white ctermbg=grey
 highlight Cursor ctermfg=white ctermbg=grey
+
+" Use spaces instead of tabs
+set expandtab
