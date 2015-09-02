@@ -12,9 +12,6 @@
       - "ls ~/.local/share/Steam || mkdir -p ~/.local/share/Steam"
       - "Setting up Steam directory (if missing)"
     -
-      - "for SCRIPT in colors/*;do if [ -f $SCRIPT -a -x $SCRIPT ];then $SCRIPT;fi;done"
-      - "Installing base16 gnome colors"
-    -
       - "ls ~/.local/share/applications || mkdir -p ~/.local/share/applications"
       - "Creating user applications directory if it does not exist"
 - clean:
@@ -54,3 +51,6 @@
     -
       - "fc-cache -f"
       - "Reloading font cache"
+    -
+      - "for SCRIPT in colors/*;do if [ -f $SCRIPT -a -x $SCRIPT ];then $SCRIPT;fi;done"
+      - "Installing base16 gnome colors"

@@ -60,12 +60,15 @@ if which "$DCONF" > /dev/null 2>&1; then
         # update profile values with theme options
         dset visible-name "'$PROFILE_NAME'"
         dset palette "['#000000', '#fb0120', '#a1c659', '#fda331', '#6fb3d2', '#d381c3', '#76c7b7', '#e0e0e0', '#b0b0b0', '#fb0120', '#a1c659', '#fda331', '#6fb3d2', '#d381c3', '#76c7b7', '#ffffff']"
-        dset background-color "'#000000'"
+        dset background-color "'#808080'"
         dset foreground-color "'#e0e0e0'"
         dset bold-color "'#e0e0e0'"
         dset bold-color-same-as-fg "true"
         dset use-theme-colors "false"
         dset use-theme-background "false"
+
+        # set font
+        dset font "'Hack 10'"
 
         unset PROFILE_NAME
         unset PROFILE_SLUG
@@ -116,6 +119,9 @@ gset string bold_color "#e0e0e0"
 gset bool   bold_color_same_as_fg "true"
 gset bool   use_theme_colors "false"
 gset bool   use_theme_background "false"
+
+# set font
+gset string font "Hack 10"
 
 unset PROFILE_NAME
 unset PROFILE_SLUG
