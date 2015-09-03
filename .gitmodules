@@ -22,3 +22,23 @@
 	path = vim/bundle/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive
 	ignore = dirty
+[submodule "base16-vim"]
+	path = vim/bundle/base16-vim
+	url = https://github.com/chriskempson/base16-vim
+	ignore = dirty
+[submodule "python-mode"]
+	path = vim/bundle/python-mode
+	url = https://github.com/klen/python-mode
+	ignore = dirty
+[submodule "vim-lua-ftplugin"]
+	path = vim/bundle/vim-lua-ftplugin
+	url = https://github.com/xolox/vim-lua-ftplugin
+	ignore = dirty
+[submodule "vim-misc"]
+	path = vim/bundle/vim-misc
+	url = https://github.com/xolox/vim-misc
+	ignore = dirty
+[submodule "vim-yaml"]
+	path = vim/bundle/vim-yaml
+	url = https://github.com/avakhov/vim-yaml
+	ignore = dirty
