@@ -1,0 +1,18 @@
+# bar config (i3blocks)
+# https://github.com/vivien/i3blocks
+bar {
+        position top
+        status_command i3blocks
+        colors {
+            background #232323
+            statusline #DCDCDC
+        }
+}
+
+## mute
+bindsym XF86AudioMute exec --no-startup-id audio mute && killall -SIGUSR1 i3status
+# bindsym XF86AudioMute+1 exec --no-startup-id audio mute 1m && killall -SIGUSR1 i3status
+## volume down
+bindsym XF86AudioLowerVolume exec --no-startup-id audio down && killall -SIGUSR1 i3status
+## volume up
+bindsym XF86AudioRaiseVolume exec --no-startup-id audio up && killall -SIGUSR1 i3status
