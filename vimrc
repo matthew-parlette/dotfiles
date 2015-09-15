@@ -38,6 +38,7 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTree
 
 " Python formatting
 au Filetype python setl et ts=4 sw=4
+let g:pymode_rope=0
 
 " Normal cursor color
 highlight Cursor guifg=white guibg=black
