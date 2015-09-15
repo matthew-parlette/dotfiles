@@ -37,6 +37,7 @@
     ~/.i3blocks.conf: i3blocks.conf
     ~/.config/gtk-3.0: gtk-3.0
     ~/.config/pystromo: pystromo
+    ~/.config/autokey: autokey
     ~/.local/share/applications/google-chrome-personal.desktop: applications/google-chrome-personal.desktop
     ~/.local/share/applications/google-chrome-work.desktop: applications/google-chrome-work.desktop
     ~/.local/share/applications/chrome-app-list-personal.desktop: applications/chrome-app-list-personal.desktop
