@@ -68,7 +68,7 @@ if which "$DCONF" > /dev/null 2>&1; then
         dset use-theme-background "false"
 
         # set font
-        dset font "'Hack 10'"
+        dset font "'Hack 8'"
 
         unset PROFILE_NAME
         unset PROFILE_SLUG
@@ -121,7 +121,7 @@ gset bool   use_theme_colors "false"
 gset bool   use_theme_background "false"
 
 # set font
-gset string font "Hack 10"
+gset string font "Hack 8"
 
 unset PROFILE_NAME
 unset PROFILE_SLUG
