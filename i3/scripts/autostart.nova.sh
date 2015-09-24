@@ -49,6 +49,10 @@ feh --bg-fill --no-xinerama /home/matt/Pictures/wallpaper/nature/YS4_5968_69_70-
 # earthbound background
 feh --bg-fill ~/Pictures/wallpaper/nes/earthbound-onett.png
 
+# sound switcher
+# required because gnome settings doesn't work right now
+indicator-sound-switcher &
+
 # 1: Personal
 # 2: Work
 ## chrome has window rules
