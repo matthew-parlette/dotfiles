@@ -62,17 +62,10 @@ dex ~/.local/share/applications/google-chrome-personal.desktop ~/.local/share/ap
 wait_for_title "Google Chrome"
 
 # 3: terminal
-# byobu in upper left
-i3-msg Workspace 3: terminal
-# start env TERM=xterm-256color byobu
-# start "dex /usr/share/applications/byobu.desktop"
-start "gnome-terminal -t byobu -x byobu"
-wait_for_title "matt@nova.* - byobu"
-sleep 2
-
-# terminal to pegasus
 i3-msg Workspace 3: terminal
 # i3-msg focus left
+start "gnome-terminal -t byobu -x ssh oberth"
+wait_for_title "matt@oberth.*"
 i3-msg split v
 start "gnome-terminal -t byobu -x ssh pegasus"
 wait_for_title "matt@pegasus.*"
@@ -80,7 +73,8 @@ sleep 2
 
 # 4: dev
 i3-msg Workspace 4: dev
-start "gnome-terminal"
+start "gnome-terminal -t byobu -x byobu"
+wait_for_title "matt@nova.* - byobu"
 sleep 2
 
 # 5: chat
