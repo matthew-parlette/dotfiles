@@ -7,4 +7,5 @@ liquidprompt/
 dotbot/
 autokey/autokey.log
 autokey/autokey.pid
+*~
 .*
