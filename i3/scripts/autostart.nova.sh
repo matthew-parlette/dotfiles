@@ -43,7 +43,7 @@ redshift-gtk &
 
 # background
 # feh --bg-fill --no-xinerama /home/matt/Pictures/wallpaper/abstract-sphere.jpg
-feh --bg-fill --no-xinerama /home/matt/Pictures/wallpaper/nature/YS4_5968_69_70-2-3.jpg
+# feh --bg-fill --no-xinerama /home/matt/Pictures/wallpaper/nature/YS4_5968_69_70-2-3.jpg
 # feh --bg-tile /home/matt/Pictures/wallpaper/pattern/stardust.png
 # feh --bg-scale /home/matt/Pictures/wallpaper/Night-city-street_1920x1080.jpg
 # earthbound background
@@ -61,6 +61,12 @@ indicator-sound-switcher &
 dex ~/.local/share/applications/google-chrome-personal.desktop ~/.local/share/applications/google-chrome-work.desktop
 wait_for_title "Google Chrome"
 
+# 4: dev
+i3-msg Workspace 4: dev
+start "gnome-terminal -t byobu -x byobu"
+wait_for_title "matt@nova.* - byobu"
+sleep 2
+
 # 3: terminal
 i3-msg Workspace 3: terminal
 # i3-msg focus left
@@ -69,12 +75,6 @@ wait_for_title "matt@oberth.*"
 i3-msg split v
 start "gnome-terminal -t byobu -x ssh pegasus"
 wait_for_title "matt@pegasus.*"
-sleep 2
-
-# 4: dev
-i3-msg Workspace 4: dev
-start "gnome-terminal -t byobu -x byobu"
-wait_for_title "matt@nova.* - byobu"
 sleep 2
 
 # 5: chat
@@ -95,20 +95,16 @@ sleep 2
 # fi
 
 # 8: audio
-i3-msg Workspace 8: audio
-dex /usr/share/applications/anoise.desktop
+# i3-msg Workspace 8: audio
+# dex /usr/share/applications/anoise.desktop
 # start "gnome-terminal -t pianobar -x pianobar"
 # wait_for_title "anoise"
 # i3-msg split v
-sleep 2
+# sleep 2
 
 # return to 3: terminal and 4: dev
 i3-msg Workspace 3: terminal
 i3-msg Workspace 4: dev
-
-# re-enable mouse
-# xinput set-prop $mouseID "Device Enabled" 1
-# xinput set-prop $touchID "Device Enabled" 1
 
 # restart i3 so the bars are correct (multi-monitor issue)
 i3-msg restart
