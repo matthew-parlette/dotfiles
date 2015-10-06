@@ -126,6 +126,7 @@ color_my_prompt
 
 alias rscp='rsync -avz --progress -e ssh'
 alias ddrpi='sudo dd bs=1M'
+alias commit='git commit --verbose'
 
 # Liquid Prompt
 ###############
