@@ -8,4 +8,4 @@ dotbot/
 autokey/autokey.log
 autokey/autokey.pid
 *~
-.*
+byobu/.ssh-agent
