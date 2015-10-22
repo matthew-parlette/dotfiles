@@ -28,6 +28,7 @@
     - "~/.vim"
     - "~/.vimrc"
     - "~/.local/share/Steam/skins"
+    - "~/.byobu/"
 - link:
     ~/.bashrc: bashrc
     ~/.liquidprompt: liquidprompt
@@ -48,6 +49,7 @@
     ~/.vim: vim
     ~/.vimrc: vimrc
     ~/.local/share/Steam/skins: steam-skins
+    ~/.byobu: byobu
 - shell:
     -
       - "fc-cache -f"
