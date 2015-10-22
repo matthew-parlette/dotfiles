@@ -1,0 +1,6 @@
+# attach;
+# new-window -d -n pega-ssh -c /home/matt/zenoss/customers/pegasystems ./jump.sh
+# new-window -d -n pega-tunnel -c /home/matt/zenoss/customers/pegasystems ./tunnel.sh
+# new-window -ad -n glances -c glances
+# new-window -d -n space-sim -c /home/matt/src/space-sim
+# new-window -d -n get-to-work -c /home/matt/src/get-to-work ./server.py

@@ -1,0 +1,2 @@
+neww -c ~
+neww -n master -c ~/src/vagrant/zenoss/centos6.4-rm4.2.5-impact4.2.6-collector

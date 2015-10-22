@@ -1,0 +1,3 @@
+neww -n dotfiles -c /home/matt/src/dotfiles
+neww -n copy&test -c ~/src
+neww -n master -c ~/src 'ssh zenoss@master'
