@@ -55,34 +55,26 @@ indicator-sound-switcher &
 
 # 1: Personal
 # 2: Work
-## chrome has window rules
-# start "google-chrome --user-data-dir=.config/google-chrome/Default"
-# start "google-chrome --user-data-dir=.config/google-chrome/Profile\ 1"
-dex ~/.local/share/applications/google-chrome-personal.desktop ~/.local/share/applications/google-chrome-work.desktop
-wait_for_title "Google Chrome"
 
 # 4: dev
-i3-msg Workspace 4: dev
-start "gnome-terminal -t byobu -x byobu"
-wait_for_title "matt@nova.* - byobu"
-sleep 2
+# i3-msg Workspace 4: dev
+# start "gnome-terminal -t byobu -x byobu"
+# wait_for_title "matt@nova.* - byobu"
+# sleep 2
 
 # 3: terminal
-i3-msg Workspace 3: terminal
-# i3-msg focus left
-start "gnome-terminal -t byobu -x ssh oberth"
-wait_for_title "matt@oberth.*"
-i3-msg split v
-start "gnome-terminal -t byobu -x ssh pegasus"
-wait_for_title "matt@pegasus.*"
-sleep 2
+# i3-msg Workspace 3: terminal
+# # i3-msg focus left
+# start "gnome-terminal -t byobu -x ssh oberth"
+# wait_for_title "matt@oberth.*"
+# i3-msg split v
+# start "gnome-terminal -t byobu -x ssh pegasus"
+# wait_for_title "matt@pegasus.*"
+# sleep 2
 
 # 5: chat
 i3-msg Workspace 5: chat
-# skype
-i3-msg split v
-# start "gnome-terminal -t irssi -x irssi"
-# wait_for_title "irssi"
+dex /usr/share/applications/slack.desktop
 sleep 2
 
 # 7: vm
@@ -95,16 +87,6 @@ sleep 2
 # fi
 
 # 8: audio
-# i3-msg Workspace 8: audio
-# dex /usr/share/applications/anoise.desktop
-# start "gnome-terminal -t pianobar -x pianobar"
-# wait_for_title "anoise"
-# i3-msg split v
-# sleep 2
-
-# return to 3: terminal and 4: dev
-i3-msg Workspace 3: terminal
-i3-msg Workspace 4: dev
 
 # restart i3 so the bars are correct (multi-monitor issue)
 i3-msg restart
