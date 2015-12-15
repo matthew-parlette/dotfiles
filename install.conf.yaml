@@ -14,6 +14,9 @@
     -
       - "ls ~/.local/share/applications || mkdir -p ~/.local/share/applications"
       - "Creating user applications directory if it does not exist"
+    -
+      - "unlink ~/.bashrc ||rm ~/.bashrc;unlink ~/.zshrc || rm ~/.zshrc"
+      - "Cleaning default files that should be links"
 - clean:
     - "~"
     - "~/.dotfiles"
@@ -29,6 +32,7 @@
     - "~/.vimrc"
     - "~/.local/share/Steam/skins"
     - "~/.byobu/"
+    - "~/.zshrc"
 - link:
     ~/.bashrc: bashrc
     ~/.liquidprompt: liquidprompt
@@ -50,6 +54,7 @@
     ~/.vimrc: vimrc
     ~/.local/share/Steam/skins: steam-skins
     ~/.byobu: byobu
+    ~/.zshrc: zshrc
 - shell:
     -
       - "fc-cache -f"

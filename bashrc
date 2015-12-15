@@ -142,3 +142,19 @@ source ~/.dotfiles/colors/base16-shell-bright.dark.sh
 ###############
 
 export PATH=/usr/local/share/npm/bin:$PATH
+
+# vagrant
+#########
+
+function my_vagrant() {
+    cmd="vagrant $1"
+    echo "Executing '$cmd'..."
+    eval "$cmd"
+    for host in "nova" "oberth"
+    do
+        echo "Sending resulting speech to $host..."
+        cmd=`echo $1 | cut -d' ' -f1`
+        eval "ssh $host espeak 'vagrant $cmd'"
+    done
+}
+alias v=my_vagrant
