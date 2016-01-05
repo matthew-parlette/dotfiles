@@ -121,7 +121,7 @@ gset bool   use_theme_colors "false"
 gset bool   use_theme_background "false"
 
 # set font
-gset string font "Hack 8"
+gset string font "Hack 10"
 
 unset PROFILE_NAME
 unset PROFILE_SLUG
