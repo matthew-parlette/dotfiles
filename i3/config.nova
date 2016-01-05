@@ -32,6 +32,7 @@ workspace $audio output HDMI-0
 # DVI-D-0: Middle
 # HDMI-0:  Right
 bar {
+        font xft: Hack, FontAwesome 10
         # output DVI-I-1
         # output DVI-D-0
         output HDMI-0

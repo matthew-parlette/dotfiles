@@ -11,24 +11,24 @@ set $mod Mod4
 # workspace names
 # define both the friendly variable as well as the number variable
 # the number variables are used for workspace switching keybinds
-set $personal "1: personal"
-set $1 "1: personal"
-set $work "2: work"
-set $2 "2: work"
-set $terminal "3: terminal"
-set $3 "3: terminal"
-set $dev "4: dev"
-set $4 "4: dev"
-set $chat "5: chat"
-set $5 "5: chat"
-set $game "6: game"
-set $6 "6: game"
-set $vm "7: vm"
-set $7 "7: vm"
-set $audio "8: audio"
-set $8 "8: audio"
+set $personal "1 "
+set $1 "1 "
+set $work "2 "
+set $2 "2 "
+set $terminal "3 "
+set $3 "3 "
+set $dev "4 "
+set $4 "4 "
+set $chat "5 "
+set $5 "5 "
+set $game "6 "
+set $6 "6 "
+set $vm "7 "
+set $7 "7 "
+set $audio "8 "
+set $8 "8 "
 set $9 "9"
-set $10 "10"
+set $10 "10 "
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below. ISO 10646 = Unicode
@@ -38,7 +38,7 @@ font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
 # right-to-left text rendering, you should instead use pango for rendering and
 # chose a FreeType font, such as:
 # font pango:DejaVu Sans Mono 10
-font pango:Ubuntu Mono 9
+font pango:Hack, FontAwesome 9
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -151,6 +151,27 @@ bindsym $mod+Ctrl+Shift+7 move container to workspace 17
 bindsym $mod+Ctrl+Shift+8 move container to workspace 18
 bindsym $mod+Ctrl+Shift+9 move container to workspace 19
 
+# run workspace script
+bindsym $mod+F1 exec --no-startup-id "~/.i3/scripts/workspace/1.sh"
+bindsym $mod+F2 exec --no-startup-id "~/.i3/scripts/workspace/2.sh"
+bindsym $mod+F3 exec --no-startup-id "~/.i3/scripts/workspace/3.sh"
+bindsym $mod+F4 exec --no-startup-id "~/.i3/scripts/workspace/4.sh"
+bindsym $mod+F5 exec --no-startup-id "~/.i3/scripts/workspace/5.sh"
+bindsym $mod+F6 exec --no-startup-id "~/.i3/scripts/workspace/6.sh"
+bindsym $mod+F7 exec --no-startup-id "~/.i3/scripts/workspace/7.sh"
+bindsym $mod+F8 exec --no-startup-id "~/.i3/scripts/workspace/8.sh"
+bindsym $mod+F9 exec --no-startup-id "~/.i3/scripts/workspace/9.sh"
+bindsym $mod+F10 exec --no-startup-id "~/.i3/scripts/workspace/10.sh"
+bindsym $mod+Ctrl+F1 exec --no-startup-id "~/.i3/scripts/workspace/11.sh"
+bindsym $mod+Ctrl+F2 exec --no-startup-id "~/.i3/scripts/workspace/12.sh"
+bindsym $mod+Ctrl+F3 exec --no-startup-id "~/.i3/scripts/workspace/13.sh"
+bindsym $mod+Ctrl+F4 exec --no-startup-id "~/.i3/scripts/workspace/14.sh"
+bindsym $mod+Ctrl+F5 exec --no-startup-id "~/.i3/scripts/workspace/15.sh"
+bindsym $mod+Ctrl+F6 exec --no-startup-id "~/.i3/scripts/workspace/16.sh"
+bindsym $mod+Ctrl+F7 exec --no-startup-id "~/.i3/scripts/workspace/17.sh"
+bindsym $mod+Ctrl+F8 exec --no-startup-id "~/.i3/scripts/workspace/18.sh"
+bindsym $mod+Ctrl+F9 exec --no-startup-id "~/.i3/scripts/workspace/19.sh"
+
 # reload the configuration file
 bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
@@ -184,8 +205,11 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
+# Shortcuts
+bindsym $mod+Escape exec "unity-control-center"
+
 # For i3-gaps
-gap_size 10
+gap_size 6
 
 # window rules
 ## WM_NAME -> title
