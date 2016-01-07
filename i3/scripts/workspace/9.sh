@@ -6,9 +6,9 @@ DIR="${BASH_SOURCE%/*}"
 if [[ ! -d "$DIR" ]]; then DIR="$PWD"; fi
 source "$DIR/functions.sh"
 
-i3-msg Workspace "2 "
-title="google-chrome (.*Profile 1)"
+i3-msg Workspace "9"
+title=""
 if ! is_running $title
 then
-    dex ~/.local/share/applications/google-chrome-work.desktop
+
 fi
