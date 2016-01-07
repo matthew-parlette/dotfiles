@@ -15,7 +15,7 @@
       - "ls ~/.local/share/applications || mkdir -p ~/.local/share/applications"
       - "Creating user applications directory if it does not exist"
     -
-      - "unlink ~/.bashrc ||rm ~/.bashrc;unlink ~/.zshrc || rm ~/.zshrc"
+      - "unlink ~/.bashrc ||rm ~/.bashrc;unlink ~/.zshrc || rm ~/.zshrc;unlink ~/.oh-my-zsh || rm -rf ~/.oh-my-zsh"
       - "Cleaning default files that should be links"
 - clean:
     - "~"
@@ -33,6 +33,7 @@
     - "~/.local/share/Steam/skins"
     - "~/.byobu/"
     - "~/.zshrc"
+    - "~/.oh-my-zsh"
 - link:
     ~/.bashrc: bashrc
     ~/.liquidprompt: liquidprompt
@@ -55,6 +56,7 @@
     ~/.local/share/Steam/skins: steam-skins
     ~/.byobu: byobu
     ~/.zshrc: zshrc
+    ~/.oh-my-zsh: oh-my-zsh
 - shell:
     -
       - "fc-cache -f"
