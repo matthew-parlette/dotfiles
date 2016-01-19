@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Name=Czaban Podcast Hour 1
+# Only KDE 4 seems to use GenericName, so we reuse the KDE strings.
+GenericName=Czaban Podcast Hour 1
+# Gnome and KDE 3 uses Comment.
+Comment=Czaban Podcast Hour 1
+Exec=czaban --hour 1
+Terminal=true
+Type=Application
+Categories=Entertainment;
