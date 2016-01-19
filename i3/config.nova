@@ -1,7 +1,7 @@
 # Try to prevent transparency issues
 new_window pixel
 
-exec --no-startup-id ~/.i3/scripts/monitors.nova.sh > ~/.i3/scripts/monitors.nova.log
+# exec --no-startup-id ~/.i3/scripts/monitors.nova.sh > ~/.i3/scripts/monitors.nova.log
 
 # rotate left monitor counter-clockwise
 # exec xrandr --output DVI-I-1 --rotate left --output DVI-D-0 --right-of DVI-I-1 --primary --output HDMI-0 --rotate left --right-of DVI-D-0 --output DVI-I-0 --right-of HDMI-0
@@ -72,9 +72,10 @@ bindsym $mod+XF86AudioMedia exec --no-startup-id audio -o speakers && killall -S
 ## f10 - audio back
 
 ## f11 - audio play/pause
-bindsym XF86AudioPlay exec --no-startup-id audio mute && sleep 180 && audio mute
+bindsym $mod+XF86AudioPlay exec --no-startup-id sonos play
 
 ## f12 - audio forward
+bindsym $mod+XF86AudioNext exec --no-startup-id sonos commercial
 
 ## print
 bindsym Print exec shutter -s
@@ -83,7 +84,7 @@ bindsym Print exec shutter -s
 
 ## mute
 bindsym XF86AudioMute exec --no-startup-id audio mute && killall -SIGUSR1 i3status
-bindsym $mod+XF86AudioMute exec --no-startup-id audio mute && sleep 60 && audio mute
+bindsym $mod+XF86AudioMute exec --no-startup-id sonos pause
 
 ## volume down
 bindsym XF86AudioLowerVolume exec --no-startup-id audio down && killall -SIGUSR1 i3status

@@ -12,8 +12,8 @@ if ! is_running $title
 then
     start "gnome-terminal -t byobu -x byobu"
     # The first start always seems to fail, so try it again
-    sleep 2
-    start "gnome-terminal -t byobu -x byobu"
+    # sleep 2
+    # start "gnome-terminal -t byobu -x byobu"
     wait_for_title $title
 fi
 
