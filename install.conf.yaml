@@ -50,6 +50,9 @@
     ~/.local/share/applications/chrome-app-list-work.desktop: applications/chrome-app-list-work.desktop
     ~/.local/share/applications/taco-personal.desktop: applications/taco-personal.desktop
     ~/.local/share/applications/taco-work.desktop: applications/taco-work.desktop
+    ~/.local/share/applications/czaban-hour-1.desktop: applications/czaban-hour-1.desktop
+    ~/.local/share/applications/czaban-hour-2.desktop: applications/czaban-hour-2.desktop
+    ~/.local/share/applications/czaban-hour-3.desktop: applications/czaban-hour-3.desktop
     ~/.fonts: fonts
     ~/.vim: vim
     ~/.vimrc: vimrc
