@@ -6,6 +6,6 @@ GenericName=Czaban Podcast Hour 3
 # Gnome and KDE 3 uses Comment.
 Comment=Czaban Podcast Hour 3
 Exec=czaban --hour 3
-Terminal=true
+Terminal=false
 Type=Application
 Categories=Entertainment;
