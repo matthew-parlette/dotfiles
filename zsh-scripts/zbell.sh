@@ -24,7 +24,7 @@ autoload -Uz add-zsh-hook || return
 (( ${+zbell_duration} )) || zbell_duration=15
 
 # initialize zbell_ignore if not set
-(( ${+zbell_ignore} )) || zbell_ignore=($EDITOR $PAGER)
+(( ${+zbell_ignore} )) || zbell_ignore=($EDITOR $PAGER $EDITOR $PAGER ls watch htop top ssh iotop dstat vmstat nano vi vim less more ping tail byobu tmux screen man powertop g)
 
 # initialize it because otherwise we compare a date and an empty string
 # the first time we see the prompt. it's fine to have lastcmd empty on the
@@ -54,7 +54,8 @@ zbell_end() {
         done
 
         if (( ! $has_ignored_cmd )) && (( ran_long )); then
-                notify-send "${(s:;:)zbell_lastcmd//|/;} has completed"
+                # notify-send "${(s:;:)zbell_lastcmd//|/;} has completed"
+                ssh nova "notify-send DISPLAY=:0 -i notifcation-gpm-monitor $HOSTNAME ${(s:;:)zbell_lastcmd//|/;} has completed"
                 print -n "\a"
         fi
 }
