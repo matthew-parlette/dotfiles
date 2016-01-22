@@ -34,6 +34,7 @@
     - "~/.byobu/"
     - "~/.zshrc"
     - "~/.oh-my-zsh"
+    - "~/.zsh-scripts"
 - link:
     ~/.bashrc: bashrc
     ~/.liquidprompt: liquidprompt
@@ -60,6 +61,7 @@
     ~/.byobu: byobu
     ~/.zshrc: zshrc
     ~/.oh-my-zsh: oh-my-zsh
+    ~/.zsh-scripts: zsh-scripts
 - shell:
     -
       - "fc-cache -f"
