@@ -55,7 +55,7 @@ zbell_end() {
 
         if (( ! $has_ignored_cmd )) && (( ran_long )); then
                 # notify-send "${(s:;:)zbell_lastcmd//|/;} has completed"
-                ssh nova "notify-send DISPLAY=:0 -i notifcation-gpm-monitor $HOSTNAME ${(s:;:)zbell_lastcmd//|/;} has completed"
+                ssh nova "DISPLAY=:0 notify-send -i notifcation-gpm-monitor $HOSTNAME ${(s:;:)zbell_lastcmd//|/;} has completed"
                 print -n "\a"
         fi
 }
