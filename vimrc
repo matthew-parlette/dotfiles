@@ -52,8 +52,8 @@ highlight iCursor guifg=white guibg=black
 " Color Scheme
 set background=dark
 colorscheme base16-bright
-highlight Normal ctermfg=white ctermbg=grey
-highlight Cursor ctermfg=white ctermbg=grey
+highlight Normal ctermfg=white ctermbg=black
+highlight Cursor ctermfg=white ctermbg=black
 
 " Use spaces instead of tabs
 set expandtab
