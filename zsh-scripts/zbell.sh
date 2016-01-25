@@ -55,10 +55,14 @@ zbell_end() {
 
         if (( ! $has_ignored_cmd )) && (( ran_long )); then
                 # notify-send "${(s:;:)zbell_lastcmd//|/;} has completed"
-                ssh nova "DISPLAY=:0 notify-send -i notifcation-gpm-monitor $HOSTNAME ${(s:;:)zbell_lastcmd//|/;} has completed"
+                ssh nova "DISPLAY=:0 notify-send -i notifcation-gpm-monitor `hostname` '${(s:;:)zbell_lastcmd//|/;} has completed'"
                 print -n "\a"
         fi
 }
+
+# remove existing hooks
+add-zsh-hook -d preexec zbell_begin
+add-zsh-hook -d precmd zbell_end
 
 # register the functions as hooks
 add-zsh-hook preexec zbell_begin
