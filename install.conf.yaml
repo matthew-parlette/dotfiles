@@ -64,7 +64,7 @@
     ~/.zsh-scripts: zsh-scripts
 - shell:
     -
-      - "fc-cache -f"
+      - "fc-cache -f||echo 'fc-cache does not exist, skipping...'"
       - "Reloading font cache"
     -
       - "for SCRIPT in colors/*;do if [ -f $SCRIPT -a -x $SCRIPT ];then $SCRIPT;fi;done"
