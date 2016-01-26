@@ -88,8 +88,10 @@ bindsym $mod+XF86AudioMute exec --no-startup-id sonos pause
 
 ## volume down
 bindsym XF86AudioLowerVolume exec --no-startup-id audio down && killall -SIGUSR1 i3status
+bindsym $mod+XF86AudioLowerVolume exec --no-startup-id sonos volume down
 ## volume up
 bindsym XF86AudioRaiseVolume exec --no-startup-id audio up && killall -SIGUSR1 i3status
+bindsym $mod+XF86AudioRaiseVolume exec --no-startup-id sonos volume up
 
 ## calculator
 bindsym XF86Calculator exec gnome-calculator
