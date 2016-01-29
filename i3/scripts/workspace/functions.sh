@@ -3,7 +3,7 @@
 #   https://github.com/fhaun/config-misc/blob/master/i3-stuff/auto-start-for-i3
 
 # maximum time to wait for a program to start
-MAXWAIT=30
+MAXWAIT=10
 
 start() {
     eval "$@ &"                  # Handle arguments with whitspaces
