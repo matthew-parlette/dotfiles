@@ -35,6 +35,7 @@
     - "~/.zshrc"
     - "~/.oh-my-zsh"
     - "~/.zsh-scripts"
+    - "~/.shutter"
 - link:
     ~/.bashrc: bashrc
     ~/.liquidprompt: liquidprompt
@@ -62,6 +63,7 @@
     ~/.zshrc: zshrc
     ~/.oh-my-zsh: oh-my-zsh
     ~/.zsh-scripts: zsh-scripts
+    ~/.shutter: shutter
 - shell:
     -
       - "fc-cache -f||echo 'fc-cache does not exist, skipping...'"
