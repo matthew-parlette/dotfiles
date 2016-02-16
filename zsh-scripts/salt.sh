@@ -28,7 +28,9 @@ zbell_end() {
         duration=$(( $EPOCHSECONDS - $zbell_timestamp ))
         result=`echo $?`
 
-        sudo salt-call event.send "cmd/$proc/return" process="$proc" duration="$duration" result="$result" &
+        if [[ "$duration" -gt 2 ]]; then
+            sudo salt-call event.send "cmd/$proc/return" process="$proc" duration="$duration" result="$result"
+        fi
 }
 
 # remove existing hooks
