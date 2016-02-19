@@ -7,8 +7,8 @@ if [[ ! -d "$DIR" ]]; then DIR="$PWD"; fi
 source "$DIR/functions.sh"
 
 i3-msg Workspace "1 "
-title="google-chrome (.*Default)"
-if ! is_running $title
-then
-    dex ~/.local/share/applications/google-chrome-personal.desktop
-fi
+# title="google-chrome (.*Default)"
+# if ! is_running $title
+# then
+dex ~/.local/share/applications/chrome-app-list-personal.desktop
+# fi
