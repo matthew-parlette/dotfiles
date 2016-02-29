@@ -1,0 +1,68 @@
+# Try to prevent transparency issues
+new_window pixel
+
+bar {
+        font xft: Hack, FontAwesome 10
+        position top
+        status_command i3blocks
+        colors {
+            background #303030
+            statusline #be643c
+            # active_workspace #76c7b7
+            # focused_workspace #000000 #000000 #a1c659
+            # inactive_workspace  #000000 #000000 #e0e0e0
+            # urgent_workspace  #000000 #000000 #fb0120
+        }
+}
+
+# custom keybinds for logitech k800
+## f1 - home
+# bindsym XF86HomePage
+## f2 - mail
+# bindsym XF86Mail
+## f3 - search
+# bindsym XF86Search
+## f4 - windows
+# Alt+Tab
+## f5 - brightness down (doesn't work)
+# bindsym XF86MonBrightnessDown gnome-calculator
+## f6 - brightness up (doesn't work)
+# bindsym XF86MonBrightnessUp
+## f7 - battery (doesn't work)
+
+## f8 - power
+bindsym XF86Sleep exec vboxmanage startvm xp
+## f9 - music
+bindsym XF86AudioMedia workspace $audio
+bindsym $mod+XF86AudioMedia exec --no-startup-id audio -o speakers && killall -SIGUSR1 i3status
+
+## f10 - audio back
+
+## f11 - audio play/pause
+bindsym $mod+XF86AudioPlay exec --no-startup-id sonos play
+
+## f12 - audio forward
+bindsym $mod+XF86AudioNext exec --no-startup-id sonos commercial
+
+## print
+bindsym Print exec shutter -s
+## fn+print
+# bindsym Menu
+
+## mute
+bindsym XF86AudioMute exec --no-startup-id audio mute && killall -SIGUSR1 i3status
+bindsym $mod+XF86AudioMute exec --no-startup-id sonos pause
+
+## volume down
+bindsym XF86AudioLowerVolume exec --no-startup-id audio down && killall -SIGUSR1 i3status
+bindsym $mod+XF86AudioLowerVolume exec --no-startup-id sonos volume down
+## volume up
+bindsym XF86AudioRaiseVolume exec --no-startup-id audio up && killall -SIGUSR1 i3status
+bindsym $mod+XF86AudioRaiseVolume exec --no-startup-id sonos volume up
+
+## calculator
+bindsym XF86Calculator exec gnome-calculator
+
+# Keypad
+bindsym $mod+KP_1 exec dex ~/.local/share/applications/chrome-app-list-personal.desktop
+bindsym $mod+KP_2 exec dex ~/.local/share/applications/chrome-app-list-work.desktop
