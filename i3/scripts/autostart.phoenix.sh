@@ -15,12 +15,7 @@ redshift-gtk &
 /home/matt/gollum-zenoss.sh &
 
 # background
-# feh --bg-fill --no-xinerama /home/matt/Pictures/wallpaper/abstract-sphere.jpg
-# feh --bg-fill --no-xinerama /home/matt/Pictures/wallpaper/nature/YS4_5968_69_70-2-3.jpg
-feh --bg-tile /home/matt/Pictures/wallpaper/pattern/stardust.png
-# feh --bg-scale /home/matt/Pictures/wallpaper/Night-city-street_1920x1080.jpg
-# earthbound background
-# feh --bg-fill ~/Pictures/wallpaper/nes/earthbound-onett.png
+krawall --resort
 
 # sound switcher
 # required because gnome settings doesn't work right now
@@ -35,4 +30,4 @@ fi
 /home/matt/src/scripts/disable-screen-blank
 
 # restart i3 so the bars are correct (multi-monitor issue from nova)
-# i3-msg restart
+i3-msg restart

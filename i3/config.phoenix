@@ -36,18 +36,24 @@ bindsym XF86Sleep exec vboxmanage startvm xp
 bindsym XF86AudioMedia workspace $audio
 bindsym $mod+XF86AudioMedia exec --no-startup-id audio -o speakers && killall -SIGUSR1 i3status
 
-## f10 - audio back
+## f10 - audio back (used by g930)
+bindsym XF86AudioNext exec audio -o speakers && killall -SIGUSR1 i3status
 
-## f11 - audio play/pause
+## f11 - audio play/pause (used by g930)
+bindsym XF86AudioNext exec audio -o headphones && killall -SIGUSR1 i3status
 bindsym $mod+XF86AudioPlay exec --no-startup-id sonos play
 
-## f12 - audio forward
+## f12 - audio forward (used by g930)
+bindsym XF86AudioNext exec audio -o speakers && killall -SIGUSR1 i3status
 bindsym $mod+XF86AudioNext exec --no-startup-id sonos commercial
 
 ## print
 bindsym Print exec shutter -s
 ## fn+print
 # bindsym Menu
+
+## scroll lock
+bindsym $mod+Scroll_Lock exec --no-startup-id sonos link
 
 ## mute
 bindsym XF86AudioMute exec --no-startup-id audio mute && killall -SIGUSR1 i3status
