@@ -37,14 +37,14 @@ bindsym XF86AudioMedia workspace $audio
 bindsym $mod+XF86AudioMedia exec --no-startup-id audio -o speakers && killall -SIGUSR1 i3status
 
 ## f10 - audio back (used by g930)
-bindsym XF86AudioNext exec audio -o speakers && killall -SIGUSR1 i3status
+bindsym XF86AudioBack exec audio -o tv && killall -SIGUSR1 i3status
 
 ## f11 - audio play/pause (used by g930)
-bindsym XF86AudioNext exec audio -o headphones && killall -SIGUSR1 i3status
+bindsym XF86AudioPlay exec audio -o headphones && killall -SIGUSR1 i3status
 bindsym $mod+XF86AudioPlay exec --no-startup-id sonos play
 
 ## f12 - audio forward (used by g930)
-bindsym XF86AudioNext exec audio -o speakers && killall -SIGUSR1 i3status
+bindsym XF86AudioNext exec audio -o tv && killall -SIGUSR1 i3status
 bindsym $mod+XF86AudioNext exec --no-startup-id sonos commercial
 
 ## print
