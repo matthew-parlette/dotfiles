@@ -30,7 +30,7 @@ zbell_end() {
 
         if [[ "$duration" -gt 2 ]]; then
             # Redirect to /dev/null and disown (&!) so it doesn't pause the terminal while sending to salt
-            sudo salt-call event.send "cmd/$proc/return" process="$proc" duration="$duration" result="$result" > /dev/null 2>&1 &!
+            sudo salt-call --timeout=5 event.send "cmd/$proc/return" process="$proc" duration="$duration" result="$result" > /dev/null 2>&1 &!
         fi
 }
 
