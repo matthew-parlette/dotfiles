@@ -12,3 +12,9 @@ if ! is_running $title
 then
     dex /usr/share/applications/steam.desktop
 fi
+
+title="Mumble"
+if ! is_running $title
+then
+    dex /usr/share/applications/mumble.desktop
+fi
