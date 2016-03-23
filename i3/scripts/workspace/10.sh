@@ -7,11 +7,11 @@ if [[ ! -d "$DIR" ]]; then DIR="$PWD"; fi
 source "$DIR/functions.sh"
 
 i3-msg Workspace "10 "
-title="glances-nova"
+title="glances-phoenix"
 if ! is_running $title
 then
-    start "gnome-terminal -t glances-nova -x ssh -t nova glances"
-    wait_for_title "glances-nova"
+    start "gnome-terminal -t glances-phoenix -x ssh -t phoenix glances"
+    wait_for_title "glances-phoenix"
 fi
 title="glances-pegasus"
 if ! is_running $title
