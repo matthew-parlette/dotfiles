@@ -16,15 +16,16 @@ redshift-gtk &
 
 # background
 krawall --resort
+krawall --hacker --next
 
 # sound switcher
 # required because gnome settings doesn't work right now
 # indicator-sound-switcher &
 
 # Start czaban hour 1 on weekday login
-if [[ $(date +%u) -lt 6 ]] ; then
-    czaban --hour 1
-fi
+# if [[ $(date +%u) -lt 6 ]] ; then
+#     czaban --hour 1
+# fi
 
 # Disable screen blanking
 /home/matt/src/scripts/disable-screen-blank
