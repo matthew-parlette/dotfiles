@@ -6,6 +6,9 @@
       - "i3/create-config"
       - "Generating host-specific i3 config"
     -
+      - "ls ~/.config || mkdir -p ~/.config"
+      - "Setting up .config directory (if missing)"
+    -
       - "ls ~/.themes || mkdir ~/.themes;tar xvfz MediterraneanNight-2.03.tar.gz -C ~/.themes"
       - "Installing GTK themes"
     -
