@@ -17,7 +17,7 @@ bar {
 
 # custom keybinds for logitech k800
 ## f1 - home
-# bindsym XF86HomePage
+bindsym XF86HomePage exec --no-startup-id nemo
 ## f2 - mail
 # bindsym XF86Mail
 ## f3 - search
