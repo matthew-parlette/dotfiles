@@ -1,25 +1,49 @@
-minimum_size 600 600
-maximum_width 600
-alignment tl
-gap_x 650
-gap_y 300
-default_color 494b5a
-own_window_argb_visual yes
-own_window_argb_value 0
-# Lua Load  #
-lua_load ~/.conky/cpu_rings.lua
-lua_draw_hook_pre clock_rings
-TEXT
-${include /home/$USER/.conky/templeterino.conf}
-${voffset 10}${goto 100}${cpu cpu0}%
-${voffset 5}${goto 70}CPU
-${goto 70} 0
-${voffset -45}${goto 520}${cpu cpu1}%
-${voffset 5}${goto 495}CPU
-${goto 495} 1
-${voffset 380}${goto 520}${cpu cpu2}%
-${goto 495}CPU
-${goto 495} 2
-${voffset -40}${goto 100}${cpu cpu3}%
-${voffset 3}${goto 70}CPU
-${goto 70} 3
+conky.config = {
+    update_interval = 1,
+    background = true,
+    text_buffer_size = 2048,
+    double_buffer = true,
+    no_buffers = true,
+    -- Text Settings
+    use_xft = true,
+    font = 'monospace:pixelsize=11',
+    xftalpha = 1,
+    override_utf8_locale = true,
+    -- Window specifications
+    own_window = true,
+    own_window_type = 'override',
+    own_window_class = 'Conky',
+    own_window_transparent = false,
+    own_window_hints = 'undecorated,below,sticky,skip_taskbar,skip_pager',
+    own_window_colour = '000000',
+    draw_graph_borders = false,
+    draw_shades = false,
+    draw_borders = false,
+    draw_outline = false,
+    minimum_width = 600,
+    minimum_height = 600,
+    maximum_width = 600,
+    alignment = 'top_left',
+    gap_x = 650,
+    gap_y = 300,
+    own_window_argb_visual = true,
+    own_window_argb_value = 0,
+    -- Lua Load
+    lua_load = '~/.conky/cpu_rings.lua',
+    lua_draw_hook_pre = 'clock_rings',
+}
+
+conky.text = [[
+    ${voffset 20}${goto 95}${cpu cpu0}%
+    ${voffset 5}${goto 70}
+    ${goto 70}
+    ${voffset -45}${goto 515}${cpu cpu1}%
+    ${voffset 5}${goto 495}
+    ${goto 495}
+    ${voffset 380}${goto 515}${cpu cpu2}%
+    ${goto 495}
+    ${goto 495}
+    ${voffset -40}${goto 95}${cpu cpu3}%
+    ${voffset 3}${goto 70}
+    ${goto 70}
+]]
