@@ -15,3 +15,4 @@ feh --bg-fill /home/matt/matthew.parlette@gmail.com/wallpaper/system/phoenix/dot
 conky -c /home/matt/.conky/conky_cpus
 conky -c /home/matt/.conky/conky_hdd
 conky -c /home/matt/.conky/conky_loggs
+conky -c /home/matt/.conky/conky_connections
