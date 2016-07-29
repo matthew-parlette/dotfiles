@@ -17,3 +17,5 @@ conky -c /home/matt/.conky/conky_cpu_history
 conky -c /home/matt/.conky/conky_hdd
 conky -c /home/matt/.conky/conky_loggs
 conky -c /home/matt/.conky/conky_connections
+conky -c /home/matt/.conky/conky_sensors
+conky -c /home/matt/.conky/conky_processes

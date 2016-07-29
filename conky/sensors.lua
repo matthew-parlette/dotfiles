@@ -13,7 +13,8 @@ settings_table = {
         start_angle=-135,
         end_angle=-45
     },
-   {
+--[[
+    {
        name='exec',
        arg='nvidia-settings -q gpucoretemp -t | head -n 1',
        max=100,
@@ -28,6 +29,7 @@ settings_table = {
        start_angle=45,
        end_angle=135
    },
+--]]
 }
 require 'cairo'
 

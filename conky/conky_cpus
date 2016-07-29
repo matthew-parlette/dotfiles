@@ -30,7 +30,7 @@ conky.config = {
     own_window_argb_value = 0,
     -- Lua Load
     lua_load = '~/.conky/cpu_rings.lua',
-    lua_draw_hook_pre = 'clock_rings',
+    lua_draw_hook_pre = 'conky_clock_rings',
 }
 
 conky.text = [[
