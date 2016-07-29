@@ -39,6 +39,8 @@
     - "~/.oh-my-zsh"
     - "~/.zsh-scripts"
     - "~/.shutter"
+    - "~/.conky"
+    - "~/.compton"
 - link:
     ~/.bashrc: bashrc
     ~/.liquidprompt: liquidprompt
@@ -68,6 +70,8 @@
     ~/.oh-my-zsh: oh-my-zsh
     ~/.zsh-scripts: zsh-scripts
     ~/.shutter: shutter
+    ~/.conky: conky
+    ~/.compton: compton
 - shell:
     -
       - "fc-cache -f||echo 'fc-cache does not exist, skipping...'"
