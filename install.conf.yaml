@@ -61,6 +61,7 @@
     ~/.local/share/applications/czaban-hour-2.desktop: applications/czaban-hour-2.desktop
     ~/.local/share/applications/czaban-hour-3.desktop: applications/czaban-hour-3.desktop
     ~/.local/share/applications/wallpaper-next.desktop: applications/wallpaper-next.desktop
+    ~/.local/share/applications/wmail.desktop: applications/wmail.desktop
     ~/.fonts: fonts
     ~/.vim: vim
     ~/.vimrc: vimrc

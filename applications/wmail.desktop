@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Name=WMail
+# Only KDE 4 seems to use GenericName, so we reuse the KDE strings.
+GenericName=WMail
+# Gnome and KDE 3 uses Comment.
+Comment=WMail
+Exec=/home/matt/src/dotfiles/wmail/WMail
+Terminal=false
+Type=Application
+Categories=Network;
