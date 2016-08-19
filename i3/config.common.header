@@ -61,7 +61,7 @@ bindsym $mod+d exec dmenu_run
 # bindsym $mod+k focus down
 
 # lock screen
-bindsym $mod+l exec i3lock --fuzzy
+bindsym $mod+l exec lock
 
 # bindsym $mod+semicolon focus right
 
