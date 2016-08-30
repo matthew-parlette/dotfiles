@@ -27,6 +27,9 @@ krawall --hacker --next
 #     czaban --hour 1
 # fi
 
+# conky desktop
+/home/matt/.conky/start.sh
+
 # Disable screen blanking
 /home/matt/src/scripts/disable-screen-blank
 
