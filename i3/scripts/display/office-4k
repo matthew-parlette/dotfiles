@@ -1,0 +1,4 @@
+#!/bin/bash
+# xrandr --output HDMI-1 --mode 4096x2160 --primary --output HDMI-2 --auto --rotate left --right-of HDMI-1
+xrandr --output HDMI-1 --mode 4096x2160 --primary --output HDMI-2 --off
+/home/matt/.conky/stop.sh

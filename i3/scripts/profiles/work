@@ -1,0 +1,4 @@
+#!/bin/bash
+/home/matt/.i3/scripts/workspace/5.sh
+sleep 5
+/home/matt/.i3/scripts/workspace/2.sh

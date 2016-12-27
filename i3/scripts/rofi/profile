@@ -1,0 +1,13 @@
+#!/bin/bash
+ppath=/home/matt/.i3/scripts/profiles
+profiles=$(ls -t "$ppath" -I *.py -I __pycache__)
+
+handle_selection() {
+  if [[ $1 ]]; then
+    profile=$1
+    "$ppath/$profile"
+    notify-send "Profile" "Activating '$profile' profile"
+  fi
+}
+
+handle_selection "$( echo "$profiles" | rofi -dmenu -i -p 'Profile ↠ ' -hlbg '#5FA5D7' -bc '#5FA5D7' )"
