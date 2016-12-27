@@ -100,9 +100,6 @@ bindsym $mod+e layout toggle split
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
 
-# change focus between tiling / floating windows
-bindsym $mod+space focus mode_toggle
-
 # focus the parent container
 bindsym $mod+a focus parent
 
@@ -207,6 +204,9 @@ bindsym $mod+r mode "resize"
 
 # Shortcuts
 bindsym $mod+Escape exec "unity-control-center"
+
+# rofi
+bindsym $mod+space exec --no-startup-id j4-dmenu-desktop --dmenu='rofi -i -dmenu -p "run:"'
 
 # For i3-gaps
 gap_size 2
