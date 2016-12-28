@@ -2,12 +2,14 @@
 dpath=/home/matt/.i3/scripts/display
 displays=$(ls -t "$dpath")
 
-handle_selection() {
-  if [[ $1 ]]; then
-    display=$1
-    "$dpath/$display"
-    notify-send "Display Profile" "Using display profile '$display'"
-  fi
-}
+if [ -z $@ ]
+then
+  # Generate list of display profiles
+  echo "$displays"
+else
+  display=$@
+  "$dpath/$display"
+  notify-send "Display Profile" "Using display profile '$display'"
+fi
 
-handle_selection "$( echo "$displays" | rofi -dmenu -i -p 'Display Profile ↠ ' -hlbg '#5FA5D7' -bc '#5FA5D7' )"
+# handle_selection "$( echo "$displays" | rofi -dmenu -i -p 'Display Profile ↠ ' -hlbg '#5FA5D7' -bc '#5FA5D7' )"

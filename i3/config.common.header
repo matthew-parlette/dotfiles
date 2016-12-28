@@ -86,9 +86,9 @@ bindsym $mod+v split v
 bindsym $mod+f fullscreen
 
 # change container layout (stacked, tabbed, toggle split)
-bindsym $mod+s layout stacking
-bindsym $mod+w layout tabbed
-bindsym $mod+e layout toggle split
+# bindsym $mod+s layout stacking
+# bindsym $mod+w layout tabbed
+# bindsym $mod+e layout toggle split
 
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
@@ -199,10 +199,10 @@ bindsym $mod+r mode "resize"
 bindsym $mod+Escape exec "unity-control-center"
 
 # rofi
-bindsym $mod+space exec --no-startup-id j4-dmenu-desktop --dmenu='rofi -i -dmenu -p ""'
-bindsym $mod+p exec --no-startup-id /home/matt/.i3/scripts/rofi/profile
-bindsym $mod+m exec --no-startup-id /home/matt/.i3/scripts/rofi/vm
-bindsym $mod+d exec --no-startup-id /home/matt/.i3/scripts/rofi/display
+bindsym $mod+space exec --no-startup-id /home/matt/.i3/scripts/rofi/rofi
+# bindsym $mod+p exec --no-startup-id /home/matt/.i3/scripts/rofi/profile
+# bindsym $mod+m exec --no-startup-id /home/matt/.i3/scripts/rofi/vm
+# bindsym $mod+d exec --no-startup-id /home/matt/.i3/scripts/rofi/display
 
 # For i3-gaps
 gap_size 2

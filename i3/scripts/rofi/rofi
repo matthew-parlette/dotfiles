@@ -1,0 +1,4 @@
+#!/bin/bash
+options="-matching fuzzy -auto-select"
+# j4-dmenu-desktop --dmenu='rofi -i -dmenu -p ""'
+rofi -combi-modi window,ssh,vm:/home/matt/.i3/scripts/rofi/vm,profile:/home/matt/.i3/scripts/rofi/profile,display:/home/matt/.i3/scripts/rofi/display,drun -show combi -modi combi $options -font "Hack 9" -color-enabled -opacity 75 -color-window "#1d1f21, #1d1f21, #1d1f21" -color-normal "#1d1f21, #c5c8c6, #1d1f21, #1d1f21, #a36ac7" -color-active "#1d1f21, #268bd2, #1d1f21, #1d1f21, #198844" -color-urgent "#1d1f21, #cc342b, #1d1f21, #cc342b, #1d1f21"
