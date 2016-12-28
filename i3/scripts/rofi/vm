@@ -8,7 +8,7 @@ then
   # Generate list of VMs
   echo "$vms"
 else
-  vm=$@
+  name=$@
   if grep -q "$name" <<< `vboxmanage list runningvms`; then
     notify-send -i virtualbox "Already Running" "VM $name already running"
   else
