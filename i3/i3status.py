@@ -64,7 +64,7 @@ status.register(
     "disk",
     path="/",
     critical_limit=50,
-    color="198844",
+    color="#198844",
     critical_color="#969896",
     format="\uf0a0",
 )
