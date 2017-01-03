@@ -1,6 +1,6 @@
 #!/bin/bash
 modi="window,ssh,vm:/home/matt/.i3/scripts/rofi/vm,profile:/home/matt/.i3/scripts/rofi/profile,display:/home/matt/.i3/scripts/rofi/display,drun" 
-options="-width 100 -padding 400 -matching fuzzy -auto-select"
+options="-width 100 -padding 400 -matching fuzzy"
 show="-show combi"
 if [ $# -ne 0 ]
 then
