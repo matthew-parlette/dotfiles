@@ -107,10 +107,10 @@ status.register(
     color="#c5c8c6",
 )
 
-status.register(
-    "pomodoro",
-    sound="/home/matt/matthew.parlette@gmail.com/ringtones/SMW - Course Clear Fanfare.wav",
-    format="\uf017 {time}",
-)
+# status.register(
+#     "pomodoro",
+#     sound="/home/matt/matthew.parlette@gmail.com/ringtones/SMW - Course Clear Fanfare.wav",
+#     format="\uf017 {time}",
+# )
 
 status.run()
