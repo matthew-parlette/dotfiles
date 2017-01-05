@@ -54,7 +54,7 @@ bindsym Print exec shutter -s
 # bindsym Menu
 
 ## scroll lock
-bindsym $mod+Scroll_Lock exec --no-startup-id sonos -z "Living Room" link
+bindsym $mod+Scroll_Lock exec --no-startup-id sonos -z "Office" link
 
 ## mute
 bindsym XF86AudioMute exec --no-startup-id audio mute && killall -SIGUSR1 i3status
