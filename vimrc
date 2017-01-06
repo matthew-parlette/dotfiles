@@ -57,3 +57,6 @@ highlight Cursor ctermfg=white ctermbg=none
 
 " Use spaces instead of tabs
 set expandtab
+
+" Fix backspace on mac
+set backspace=indent,eol,start
