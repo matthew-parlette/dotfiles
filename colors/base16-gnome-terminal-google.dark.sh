@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
-# Base16 Bright - Gnome Terminal color scheme install script
-# Chris Kempson (http://chriskempson.com)
+# Base16 Google - Gnome Terminal color scheme install script
+# Seth Wright (http://sethawright.com)
 
-[[ -z "$PROFILE_NAME" ]] && PROFILE_NAME="Base 16 Bright Dark"
-[[ -z "$PROFILE_SLUG" ]] && PROFILE_SLUG="base-16-bright-dark"
+[[ -z "$PROFILE_NAME" ]] && PROFILE_NAME="Base 16 Google Dark"
+[[ -z "$PROFILE_SLUG" ]] && PROFILE_SLUG="base-16-google-dark"
 [[ -z "$DCONF" ]] && DCONF=dconf
 [[ -z "$UUIDGEN" ]] && UUIDGEN=uuidgen
 
@@ -59,16 +59,13 @@ if which "$DCONF" > /dev/null 2>&1; then
 
         # update profile values with theme options
         dset visible-name "'$PROFILE_NAME'"
-        dset palette "['#000000', '#fb0120', '#a1c659', '#fda331', '#6fb3d2', '#d381c3', '#76c7b7', '#e0e0e0', '#b0b0b0', '#fb0120', '#a1c659', '#fda331', '#6fb3d2', '#d381c3', '#76c7b7', '#ffffff']"
-        dset background-color "'#808080'"
-        dset foreground-color "'#e0e0e0'"
-        dset bold-color "'#e0e0e0'"
+        dset palette "['#1d1f21', '#CC342B', '#198844', '#FBA922', '#3971ED', '#A36AC7', '#3971ED', '#c5c8c6', '#969896', '#CC342B', '#198844', '#FBA922', '#3971ED', '#A36AC7', '#3971ED', '#ffffff']"
+        dset background-color "'#1d1f21'"
+        dset foreground-color "'#c5c8c6'"
+        dset bold-color "'#c5c8c6'"
         dset bold-color-same-as-fg "true"
         dset use-theme-colors "false"
         dset use-theme-background "false"
-
-        # set font
-        dset font "'Hack 8'"
 
         unset PROFILE_NAME
         unset PROFILE_SLUG
@@ -112,16 +109,13 @@ glist_append() {
 glist_append string /apps/gnome-terminal/global/profile_list "$PROFILE_SLUG"
 
 gset string visible_name "$PROFILE_NAME"
-gset string palette "#000000:#fb0120:#a1c659:#fda331:#6fb3d2:#d381c3:#76c7b7:#e0e0e0:#b0b0b0:#fb0120:#a1c659:#fda331:#6fb3d2:#d381c3:#76c7b7:#ffffff"
-gset string background_color "#2e3436"
-gset string foreground_color "#e0e0e0"
-gset string bold_color "#e0e0e0"
+gset string palette "#1d1f21:#CC342B:#198844:#FBA922:#3971ED:#A36AC7:#3971ED:#c5c8c6:#969896:#CC342B:#198844:#FBA922:#3971ED:#A36AC7:#3971ED:#ffffff"
+gset string background_color "#1d1f21"
+gset string foreground_color "#c5c8c6"
+gset string bold_color "#c5c8c6"
 gset bool   bold_color_same_as_fg "true"
 gset bool   use_theme_colors "false"
 gset bool   use_theme_background "false"
-
-# set font
-gset string font "Hack 10"
 
 unset PROFILE_NAME
 unset PROFILE_SLUG

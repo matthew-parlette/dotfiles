@@ -2,16 +2,17 @@
 new_window pixel
 
 bar {
-        font xft: Hack, FontAwesome 10
+        font xft: Hack, FontAwesome 9
         position top
-        status_command i3blocks
+        status_command python3 /home/matt/.i3/i3status.py
+        tray_output primary
         colors {
-            background #303030
-            statusline #be643c
-            # active_workspace #76c7b7
-            # focused_workspace #000000 #000000 #a1c659
-            # inactive_workspace  #000000 #000000 #e0e0e0
-            # urgent_workspace  #000000 #000000 #fb0120
+            background #1d1f21
+            statusline #c5c8c6
+            active_workspace #1d1f21 #1d1f21 #3971ed
+            focused_workspace #1d1f21 #1d1f21 #3971ed
+            inactive_workspace #1d1f21 #1d1f21 #c5c8c6
+            urgent_workspace #1d1f21 #1d1f21 #cc342b
         }
 }
 
@@ -53,7 +54,7 @@ bindsym Print exec shutter -s
 # bindsym Menu
 
 ## scroll lock
-bindsym $mod+Scroll_Lock exec --no-startup-id sonos -z "Living Room" link
+bindsym $mod+Scroll_Lock exec --no-startup-id sonos -z "Office" link
 
 ## mute
 bindsym XF86AudioMute exec --no-startup-id audio mute && killall -SIGUSR1 i3status

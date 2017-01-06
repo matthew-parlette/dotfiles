@@ -1,0 +1,17 @@
+#!/bin/bash
+
+function output () {
+    sink=`pactl list short sinks | grep $1 | cut -f1`
+    echo "Setting default sink to `pactl list short sinks | grep $1`...";
+    pactl set-default-sink $1
+    echo "Moving current inputs to default sink..."
+    pactl list short sink-inputs | while read line
+    do
+        echo "Moving input: ";
+        echo $line | cut -f1 -d' ';
+        echo "to sink: $1";
+        pactl move-sink-input `echo $line | cut -f1 -d' '` "$1"
+    done
+}
+
+output `pactl list short sinks | awk '/usb.*Logitech/ {print $2}'`

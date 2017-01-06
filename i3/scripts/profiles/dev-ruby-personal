@@ -1,0 +1,38 @@
+#!/usr/bin/env python3
+from lookup import *
+from helper import *
+
+ws = workspace[4]
+focus(ws)
+
+debug()
+
+# Start RubyMine
+cmd = [
+    'dex',
+    '/usr/share/applications/jetbrains-rubymine.desktop',
+]
+if workspace_contains(ws, name="RubyMine"):
+    pass
+else:
+    start(cmd)
+
+# Start Chrome
+cmd = [
+    '/opt/google/chrome/google-chrome',
+]
+pages = [
+    'https://github.com/matthew-parlette?tab=repositories',
+]
+if workspace_contains(ws, name="Chrome"):
+    # Open in new tabs
+    cmd += ['--new-tab']
+else:
+    # Open in new tabs
+    cmd += ['--new-window']
+cmd += [
+    '--user-data-dir=.config/google-chrome/Default'
+]
+cmd += pages
+
+start(cmd)
