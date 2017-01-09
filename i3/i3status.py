@@ -99,13 +99,13 @@ status.register(
     },
 )
 
-status.register(
-    "pianobar",
-    format="{songartist} - {songtitle}",
-    songfile="/home/matt/.config/pianobar/song",
-    ctlfile="/home/matt/.config/pianobar/ctl",
-    color="#c5c8c6",
-)
+# status.register(
+#     "pianobar",
+#     format="{songartist} - {songtitle}",
+#     songfile="/home/matt/.config/pianobar/song",
+#     ctlfile="/home/matt/.config/pianobar/ctl",
+#     color="#c5c8c6",
+# )
 
 # status.register(
 #     "pomodoro",
