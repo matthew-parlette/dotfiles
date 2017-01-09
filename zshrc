@@ -1,8 +1,8 @@
 # Path to your oh-my-zsh installation.
-  export ZSH=/home/matt/.oh-my-zsh
+  export ZSH=$HOME/.oh-my-zsh
 
 # Path to zsh scripts directory
-  export ZSH_SCRIPTS=/home/matt/.zsh-scripts
+  export ZSH_SCRIPTS=$HOME/.zsh-scripts
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -58,7 +58,7 @@ plugins=(git)
 
 # User configuration
 
-  export PATH="/usr/local/share/npm/bin:/usr/local/share/npm/bin:/home/matt/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin:/usr/local/packer:/home/matt/Dropbox/Documents/Projects/Scripts:/home/matt/Dropbox/Documents/Projects/Scripts"
+  export PATH="/usr/local/share/npm/bin:/usr/local/share/npm/bin:/home/matt/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin:/usr/local/packer"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
