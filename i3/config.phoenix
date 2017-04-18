@@ -2,18 +2,18 @@
 new_window pixel
 
 bar {
-        font xft: Hack, FontAwesome 9
-        position top
-        status_command python3 /home/matt/.i3/i3status.py
-        tray_output primary
-        colors {
-            background #1d1f21
-            statusline #c5c8c6
-            active_workspace #1d1f21 #1d1f21 #3971ed
-            focused_workspace #1d1f21 #1d1f21 #3971ed
-            inactive_workspace #1d1f21 #1d1f21 #c5c8c6
-            urgent_workspace #1d1f21 #1d1f21 #cc342b
-        }
+  font xft: Hack, FontAwesome 9
+  position top
+  status_command python3 /home/matt/.i3/i3status.py
+  tray_output primary
+  colors {
+    background #1d1f21
+    statusline #c5c8c6
+    active_workspace #1d1f21 #1d1f21 #3971ed
+    focused_workspace #1d1f21 #1d1f21 #3971ed
+    inactive_workspace #1d1f21 #1d1f21 #c5c8c6
+    urgent_workspace #1d1f21 #1d1f21 #cc342b
+  }
 }
 
 # custom keybinds for logitech k800
@@ -73,3 +73,5 @@ bindsym XF86Calculator exec gnome-calculator
 # Keypad
 bindsym $mod+KP_1 exec dex ~/.local/share/applications/chrome-app-list-personal.desktop
 bindsym $mod+KP_2 exec dex ~/.local/share/applications/chrome-app-list-work.desktop
+
+bindsym $mod+Ctrl+Shift+r exec /media/truecrypt12/random 5
