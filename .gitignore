@@ -12,4 +12,5 @@ autokey/autokey.pid
 byobu/.ssh-agent
 core
 shutter/accounts.xml
+shutter/profiles/*accounts.xml
 shutter/session.xml
