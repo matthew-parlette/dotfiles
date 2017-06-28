@@ -41,7 +41,8 @@ bindsym $mod+XF86AudioMedia exec --no-startup-id audio -o tv && killall -SIGUSR1
 bindsym XF86AudioBack exec audio -o tv && killall -SIGUSR1 i3status
 
 ## f11 - audio play/pause (used by g930)
-bindsym XF86AudioPlay exec audio -o headphones && killall -SIGUSR1 i3status
+# bindsym XF86AudioPlay exec audio -o headphones && killall -SIGUSR1 i3status
+bindsym XF86AudioPlay exec --no-startup-id sonos play
 bindsym $mod+XF86AudioPlay exec --no-startup-id sonos play
 
 ## f12 - audio forward (used by g930)
@@ -75,3 +76,38 @@ bindsym $mod+KP_1 exec dex ~/.local/share/applications/chrome-app-list-personal.
 bindsym $mod+KP_2 exec dex ~/.local/share/applications/chrome-app-list-work.desktop
 
 bindsym $mod+Ctrl+Shift+r exec /media/truecrypt12/random 5
+bindsym $mod+w exec /media/truecrypt12/random-workspace
+
+# Remote
+bindsym XF86AudioForward exec --no-startup-id sonos play
+bindsym XF86AudioRewind exec --no-startup-id sonos pause
+bindsym Prior exec --no-startup-id sonos volume up
+bindsym Next exec --no-startup-id sonos volume down
+
+mode "remote" {
+  bindsym XF86PowerOff mode "default"
+  bindsym 1 workspace 11
+  bindsym 2 workspace 12
+  bindsym 3 workspace 13
+  bindsym 4 workspace 14
+  bindsym 5 workspace 15
+  bindsym 6 workspace 16
+  bindsym 7 workspace 17
+  bindsym 8 workspace 18
+  bindsym 9 workspace 19
+  bindsym F3 exec i3-msg Workspace 11;/usr/bin/keepassx;/usr/bin/truecrypt
+  bindsym XF86Tools exec /media/truecrypt12/random 5
+  bindsym XF86Mail exec /media/truecrypt12/random --option /media/truecrypt7/.other 5
+  bindsym F2 exec /media/truecrypt1/random-scene
+  bindsym XF86WWW exec /media/truecrypt1/random-scene
+  bindsym Menu exec /media/truecrypt1/random-scene
+  bindsym Return exec /media/truecrypt12/random-workspace
+  bindsym Up exec /media/truecrypt12/random 1
+  bindsym Down exec /media/truecrypt12/random --option /media/truecrypt7/.other 1
+  bindsym Prior workspace next
+  bindsym Next workspace prev
+  bindsym BackSpace kill
+  bindsym $mod+Shift+q kill
+}
+
+bindsym XF86PowerOff mode "remote"
