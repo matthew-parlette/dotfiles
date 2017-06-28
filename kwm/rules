@@ -1,0 +1,4 @@
+kwmc rule properties={float="true"} owner="System Preferences"
+kwmc rule properties={float="true"} owner="Pomello"
+
+# kwmc rule properties={space="2"} owner="RubyMine"
