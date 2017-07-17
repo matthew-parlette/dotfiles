@@ -23,7 +23,6 @@
 - clean:
     - "~"
     - "~/.dotfiles"
-    - "~/.liquidprompt"
     - "~/.irssi"
     - "~/.i3"
     - "~/.i3blocks.conf"
@@ -44,7 +43,6 @@
     - "~/.kwm"
 - link:
     ~/.bashrc: bashrc
-    ~/.liquidprompt: liquidprompt
     ~/.dotfiles: ''
     ~/.irssi: irssi
     ~/.i3: i3
