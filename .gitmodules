@@ -45,3 +45,7 @@
 	path = vim/bundle/vim-rails
 	url = https://github.com/tpope/vim-rails
 	ignore = dirty
+[submodule "vim-sleuth"]
+	path = vim/bundle/vim-sleuth
+	url = https://github.com/tpope/vim-sleuth
+	ignore = dirty
