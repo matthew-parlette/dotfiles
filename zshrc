@@ -62,7 +62,7 @@ plugins=(git)
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
-source $ZSH_SCRIPTS/salt.sh
+# source $ZSH_SCRIPTS/salt.sh
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
