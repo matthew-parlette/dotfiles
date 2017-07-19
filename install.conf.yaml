@@ -33,7 +33,6 @@
     - "~/.vim"
     - "~/.vimrc"
     - "~/.local/share/Steam/skins"
-    - "~/.byobu/"
     - "~/.zshrc"
     - "~/.oh-my-zsh"
     - "~/.zsh-scripts"
@@ -65,7 +64,6 @@
     ~/.vim: vim
     ~/.vimrc: vimrc
     ~/.local/share/Steam/skins: steam-skins
-    ~/.byobu: byobu
     ~/.zshrc: zshrc
     ~/.oh-my-zsh: oh-my-zsh
     ~/.zsh-scripts: zsh-scripts
