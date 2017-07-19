@@ -1,6 +1,6 @@
 - shell:
     -
-      - "git submodule update --init --remote --force --recursive"
+      - "git submodule update --init --force --recursive"
       - "Updating submodules"
     -
       - "i3/create-config"
