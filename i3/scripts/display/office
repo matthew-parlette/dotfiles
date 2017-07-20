@@ -1,3 +1,4 @@
 #!/bin/bash
 xrandr --output HDMI-1 --mode 1920x1080 --primary --output HDMI-2 --off
+/home/matt/.conky/stop.sh
 /home/matt/.conky/start.sh
