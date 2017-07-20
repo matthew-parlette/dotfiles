@@ -1,0 +1,38 @@
+"*":
+  "atom-material-ui":
+    colors:
+      abaseColor: "#aad875"
+      accentColor: "#6f8853"
+      predefinedColor: "Green"
+    tabs: {}
+    ui:
+      panelShadows: true
+  core:
+    autoHideMenuBar: true
+    openEmptyEditorOnStart: false
+    projectHome: "/home/matt/src"
+    telemetryConsent: "limited"
+    themes: [
+      "atom-material-ui"
+      "atom-material-syntax"
+    ]
+  editor:
+    fontSize: 12
+    showIndentGuide: true
+    tabType: "soft"
+  "exception-reporting":
+    userId: "5fa188be-1721-ffe8-18c1-10364f2c348d"
+  "git-plus":
+    general:
+      _analyticsUserId: "2f234b90-5d0a-4ace-80b4-e7f3d80bf49e"
+  welcome:
+    showOnStartup: false
+".erb.html.text":
+  editor:
+    autoIndent: true
+".html.ruby.text":
+  editor:
+    autoIndent: true
+".ruby.source":
+  editor:
+    autoIndent: true
