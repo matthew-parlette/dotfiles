@@ -40,6 +40,7 @@
     - "~/.conky"
     - "~/.compton"
     - "~/.kwm"
+    - "~/.atom"
 - link:
     ~/.bashrc: bashrc
     ~/.dotfiles: ''
@@ -71,6 +72,7 @@
     ~/.conky: conky
     ~/.compton: compton
     ~/.kwm: kwm
+    ~/.atom: atom
 - shell:
     -
       - "fc-cache -f||echo 'fc-cache does not exist, skipping...'"
