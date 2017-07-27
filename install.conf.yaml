@@ -41,6 +41,7 @@
     - "~/.shutter"
     - "~/.conky"
     - "~/.compton"
+    - "~/.blessed"
 - link:
     ~/.bashrc: bashrc
     ~/.liquidprompt: liquidprompt
@@ -73,6 +74,7 @@
     ~/.shutter: shutter
     ~/.conky: conky
     ~/.compton: compton
+    ~/.blessed: blessed
 - shell:
     -
       - "fc-cache -f||echo 'fc-cache does not exist, skipping...'"
