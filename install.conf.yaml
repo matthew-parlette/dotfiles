@@ -20,6 +20,9 @@
     -
       - "unlink ~/.bashrc ||rm ~/.bashrc;unlink ~/.zshrc || rm ~/.zshrc;unlink ~/.oh-my-zsh || rm -rf ~/.oh-my-zsh"
       - "Cleaning default files that should be links"
+    -
+      - "if [ ! -d /tmp/nerd-fonts/.git ];then;git clone https://github.com/ryanoasis/nerd-fonts.git /tmp/nerd-fonts;else;git -C /tmp/nerd-fonts pull;fi;/tmp/nerd-fonts/install.sh"
+      - "Installing nerd-fonts"
 - clean:
     - "~"
     - "~/.dotfiles"
