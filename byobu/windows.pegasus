@@ -1,4 +1,0 @@
-neww -n salt -c /srv/salt
-neww -n pillar -c /srv/pillar
-neww -n reactor -c /srv/reactor
-neww -n api -c /home/matt/src/ptr-api
