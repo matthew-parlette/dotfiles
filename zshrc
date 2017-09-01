@@ -89,3 +89,5 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias ls="colorls -sd"
+alias ll="colorls -l"
+alias lc="colorls -r"
