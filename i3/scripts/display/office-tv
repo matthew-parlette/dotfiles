@@ -1,0 +1,8 @@
+#!/bin/bash
+# TV
+xrandr --output HDMI-1 --mode 1920x1080 --primary --output HDMI-2 --off
+# Monitor
+# xrandr --output HDMI-1 --mode 1920x1200 --primary --output HDMI-2 --off
+/home/matt/.conky/stop.sh
+# sleep 5
+# /home/matt/.conky/start.sh
