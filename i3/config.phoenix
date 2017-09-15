@@ -81,8 +81,8 @@ bindsym $mod+w exec /media/truecrypt12/random-workspace
 # Remote
 bindsym XF86AudioForward exec --no-startup-id sonos play
 bindsym XF86AudioRewind exec --no-startup-id sonos pause
-bindsym Prior exec --no-startup-id sonos volume up
-bindsym Next exec --no-startup-id sonos volume down
+# bindsym Prior exec --no-startup-id sonos volume up
+# bindsym Next exec --no-startup-id sonos volume down
 
 mode "remote" {
   bindsym XF86PowerOff mode "default"
