@@ -92,3 +92,6 @@ alias ls="colorls -sd"
 alias ll="colorls -l"
 alias lc="colorls -r"
 alias i="feh --scale-down --auto-zoom"
+
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
