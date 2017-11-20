@@ -91,3 +91,4 @@ source $ZSH/oh-my-zsh.sh
 alias ls="colorls -sd"
 alias ll="colorls -l"
 alias lc="colorls -r"
+alias i="feh --scale-down --auto-zoom"
