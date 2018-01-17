@@ -11,6 +11,7 @@
 ZSH_THEME="amuse"
 ZSH_THEME="terminalparty"
 ZSH_THEME="ys"
+ZSH_THEME="spaceship"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -48,7 +49,7 @@ ZSH_THEME="ys"
 HIST_STAMPS="yyyy-mm-dd"
 
 # Would you like to use another custom folder than $ZSH/custom?
-# ZSH_CUSTOM=/path/to/new-custom-folder
+ZSH_CUSTOM=$HOME/.zsh-custom
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
@@ -58,7 +59,7 @@ plugins=(git)
 
 # User configuration
 
-  export PATH="/usr/local/share/npm/bin:/usr/local/share/npm/bin:/home/matt/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin:/usr/local/packer:/snap/bin"
+export PATH="/usr/local/share/npm/bin:/usr/local/share/npm/bin:/home/matt/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/local/packer:/snap/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -68,11 +69,11 @@ source $ZSH/oh-my-zsh.sh
 # export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
+if [[ -n $SSH_CONNECTION ]]; then
+  export EDITOR='vim'
+else
+  export EDITOR='vim'
+fi
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -88,12 +89,18 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias ls="colorls -sd"
+alias ls="colorls --sd"
 alias ll="colorls -l"
 alias lc="colorls -r"
+alias gs="colorls --gs"
 alias i="feh --scale-down --auto-zoom"
+
+export SHELL="/bin/zsh"
 
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
 
 $ZSH_SCRIPTS/motd
+
+
+source "/Users/matthew.parlette/.oh-my-zsh/custom/themes/spaceship.zsh-theme"

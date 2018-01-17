@@ -36,6 +36,7 @@
     - "~/.zshrc"
     - "~/.oh-my-zsh"
     - "~/.zsh-scripts"
+    - "~/.zsh-custom"
     - "~/.shutter"
     - "~/.conky"
     - "~/.compton"
@@ -49,17 +50,6 @@
     ~/.config/gtk-3.0: gtk-3.0
     ~/.config/pystromo: pystromo
     ~/.config/autokey: autokey
-    ~/.local/share/applications/google-chrome-personal.desktop: applications/google-chrome-personal.desktop
-    ~/.local/share/applications/google-chrome-work.desktop: applications/google-chrome-work.desktop
-    ~/.local/share/applications/chrome-app-list-personal.desktop: applications/chrome-app-list-personal.desktop
-    ~/.local/share/applications/chrome-app-list-work.desktop: applications/chrome-app-list-work.desktop
-    ~/.local/share/applications/taco-personal.desktop: applications/taco-personal.desktop
-    ~/.local/share/applications/taco-work.desktop: applications/taco-work.desktop
-    ~/.local/share/applications/czaban-hour-1.desktop: applications/czaban-hour-1.desktop
-    ~/.local/share/applications/czaban-hour-2.desktop: applications/czaban-hour-2.desktop
-    ~/.local/share/applications/czaban-hour-3.desktop: applications/czaban-hour-3.desktop
-    ~/.local/share/applications/wallpaper-next.desktop: applications/wallpaper-next.desktop
-    ~/.local/share/applications/wmail.desktop: applications/wmail.desktop
     ~/.fonts: fonts
     ~/.vim: vim
     ~/.vimrc: vimrc
@@ -67,6 +57,7 @@
     ~/.zshrc: zshrc
     ~/.oh-my-zsh: oh-my-zsh
     ~/.zsh-scripts: zsh-scripts
+    ~/.zsh-custom: zsh-custom
     ~/.shutter: shutter
     ~/.conky: conky
     ~/.compton: compton
