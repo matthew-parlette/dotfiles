@@ -98,9 +98,13 @@ alias i="feh --scale-down --auto-zoom"
 export SHELL="/bin/zsh"
 
 export NVM_DIR=~/.nvm
-source $(brew --prefix nvm)/nvm.sh
+# In general, (( $+param )) returns true if param is set.
+# $commands is an associative array that lists commands.
+# (( $+commands[command-name] )) returns true if the key 'command-name' exists.
+if (( $+commands[brew] )) ; then
+	source $(brew --prefix nvm)/nvm.sh
+fi
 
 $ZSH_SCRIPTS/motd
 
-
-source "~/.oh-my-zsh/custom/themes/spaceship.zsh-theme"
+source ~/.zsh-custom/themes/spaceship.zsh-theme
