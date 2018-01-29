@@ -103,4 +103,4 @@ source $(brew --prefix nvm)/nvm.sh
 $ZSH_SCRIPTS/motd
 
 
-source "/Users/matthew.parlette/.oh-my-zsh/custom/themes/spaceship.zsh-theme"
+source "~/.oh-my-zsh/custom/themes/spaceship.zsh-theme"
