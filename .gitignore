@@ -14,3 +14,4 @@ core
 shutter/accounts.xml
 shutter/profiles/*accounts.xml
 shutter/session.xml
+atom
