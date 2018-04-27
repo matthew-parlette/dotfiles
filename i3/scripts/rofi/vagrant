@@ -1,0 +1,21 @@
+#!/bin/bash
+# Get all directories with Vagrantfile, only search in /home/matt/src
+vagrant=$(find /home/matt/src -name "Vagrantfile"|sed 's/\/home\/matt\/src\///g'|sed 's/\/Vagrantfile//g')
+# runningvms=$(vboxmanage list runningvms)
+# vms=$(vboxmanage list vms|cut -d' ' -f 1|sed 's/"//g')
+
+if [ -z $@ ]
+then
+  # Generate list of VMs
+  echo "$vagrant"
+else
+  path=$@
+  notify-send -i virtualbox "Vagrant ($path) Starting" "VM $path starting"
+  fullpath="/home/matt/src/$path"
+  # i3-sensible-terminal --working-directory=\"$fullpath\" --profile \"stay-open\" --command \"cd $fullpath && ls\" &
+  i3-msg exec "i3-sensible-terminal --working-directory='$fullpath' --profile 'stay-open' --command 'ls'" &
+  # sleep 0.5
+  # i3-msg floating enable
+fi
+
+# handle_selection "$( echo "$vms" | rofi -dmenu -i -p 'VM ↠ ' -hlbg '#5FA5D7' -bc '#5FA5D7' )"
