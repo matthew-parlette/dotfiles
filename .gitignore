@@ -1,5 +1,6 @@
 *.log
 *.pyc
+applications/random-3.desktop
 i3/config
 i3/config.previous
 i3/scripts/.config
@@ -9,7 +10,7 @@ dotbot/
 autokey/autokey.log
 autokey/autokey.pid
 *~
-byobu/.ssh-agent
+byobu
 core
 shutter/accounts.xml
 shutter/profiles/*accounts.xml
