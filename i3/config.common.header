@@ -25,8 +25,8 @@ set $game "6 "
 set $6 "6 "
 set $vm "7 "
 set $7 "7 "
-set $audio "8 "
-set $8 "8 "
+set $audio "8"
+set $8 "8"
 set $9 "9"
 set $10 "10 "
 
@@ -194,6 +194,22 @@ mode "resize" {
 }
 
 bindsym $mod+r mode "resize"
+
+# Shutdown menu
+set $mode_system System (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (Shift+s) shutdown
+mode "$mode_system" {
+    bindsym l exec --no-startup-id lock, mode "default"
+    bindsym e exec --no-startup-id i3-msg exit, mode "default"
+    bindsym s exec --no-startup-id lock && systemctl suspend, mode "default"
+    bindsym h exec --no-startup-id lock && systemctl hibernate, mode "default"
+    bindsym r exec --no-startup-id systemctl reboot, mode "default"
+    bindsym Shift+s exec --no-startup-id systemctl poweroff -i, mode "default"  
+
+    # back to normal: Enter or Escape
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+bindsym XF86Sleep mode "$mode_system"
 
 # Shortcuts
 bindsym $mod+Escape exec "unity-control-center"
