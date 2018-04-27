@@ -32,7 +32,7 @@ bindsym XF86HomePage exec --no-startup-id nemo
 ## f7 - battery (doesn't work)
 
 ## f8 - power
-bindsym XF86Sleep exec vboxmanage startvm xp
+# bindsym XF86Sleep exec cd ~/src/upguard && vagrant up
 ## f9 - music
 bindsym XF86AudioMedia workspace $audio
 bindsym $mod+XF86AudioMedia exec --no-startup-id audio -o tv && killall -SIGUSR1 i3status
@@ -51,6 +51,7 @@ bindsym $mod+XF86AudioNext exec --no-startup-id sonos commercial
 
 ## print
 bindsym Print exec shutter -s
+bindsym $mod+Print exec shutter -f
 ## fn+print
 # bindsym Menu
 
