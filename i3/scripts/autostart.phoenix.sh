@@ -11,8 +11,8 @@ dex -ae i3
 redshift-gtk &
 
 # gollum
-/home/matt/gollum.sh &
-/home/matt/gollum-zenoss.sh &
+# /home/matt/gollum.sh &
+# /home/matt/gollum-zenoss.sh &
 
 # background
 krawall --resort
