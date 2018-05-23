@@ -1,8 +1,12 @@
 #!/bin/bash
 # TV
-xrandr --output HDMI-1 --mode 1920x1080 --primary --output HDMI-2 --off
+xrandr --output DP-1 --mode 1920x1080 --primary --output HDMI-2 --off
 # Monitor
 # xrandr --output HDMI-1 --mode 1920x1200 --primary --output HDMI-2 --off
 /home/matt/.conky/stop.sh
 # sleep 5
+# conky config doesn't work on tv, it prevents any input and you need to switch to another tty
 # /home/matt/.conky/start.sh
+
+krawall --resort
+krawall --hacker --next
