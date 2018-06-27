@@ -111,6 +111,10 @@ $ZSH_SCRIPTS/motd
 
 source ~/.zsh-custom/themes/spaceship.zsh-theme
 
-export GOPATH="/home/matt/src/go"
+if [[ $OSTYPE == darwin* ]]; then
+  export GOPATH="$HOME/go"
+else
+  export GOPATH="/home/matt/src/go"
+fi
 
 export PATH="$PATH:$(go env GOPATH)/bin"
