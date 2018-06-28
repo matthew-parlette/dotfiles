@@ -1,6 +1,6 @@
 #!/bin/bash
 #modi="ssh,vm:/home/matt/.i3/scripts/rofi/vm"
-modi="window,profile:/home/matt/.i3/scripts/rofi/profile,display:/home/matt/.i3/scripts/rofi/display,atom:/home/matt/.i3/scripts/rofi/atom,vagrant:/home/matt/.i3/scripts/rofi/vagrant,drun"
+modi="profile:/home/matt/.i3/scripts/rofi/profile,display:/home/matt/.i3/scripts/rofi/display,atom:/home/matt/.i3/scripts/rofi/atom,vagrant:/home/matt/.i3/scripts/rofi/vagrant,drun"
 options="-width 100 -padding 200" # -matching fuzzy"
 show="-show combi"
 if [ $# -ne 0 ]
