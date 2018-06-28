@@ -1,5 +1,8 @@
 ##########################
 # end host specific config
 
+# Wallpaper
+bindsym $mod+Shift+n exec --no-startup-id dex ~/.local/share/applications/wallpaper-next.desktop
+
 # workspace start scripts
 exec --no-startup-id ~/.i3/scripts/autostart.sh > ~/.i3/scripts/autostart.log
