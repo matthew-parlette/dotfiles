@@ -158,3 +158,6 @@ function my_vagrant() {
     done
 }
 alias v=my_vagrant
+
+export GOPATH="/home/matt/src/go"
+export PATH="$PATH:$(go env GOPATH)/bin"
