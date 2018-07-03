@@ -1,17 +1,22 @@
 # Path to your oh-my-zsh installation.
-  export ZSH=$HOME/.oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
 
 # Path to zsh scripts directory
-  export ZSH_SCRIPTS=$HOME/.zsh-scripts
+export ZSH_SCRIPTS=$HOME/.zsh-scripts
+
+$ZSH_SCRIPTS/motd
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="amuse"
-ZSH_THEME="terminalparty"
-ZSH_THEME="ys"
+
+# ZSH Theme
+# ZSH_THEME="amuse"
+# ZSH_THEME="terminalparty"
+# ZSH_THEME="ys"
 ZSH_THEME="spaceship"
+source ~/.zsh-custom/themes/spaceship.zsh-theme
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -95,6 +100,7 @@ alias i="feh --scale-down --auto-zoom"
 
 export SHELL="/bin/zsh"
 
+# NVM
 export NVM_DIR=~/.nvm
 # In general, (( $+param )) returns true if param is set.
 # $commands is an associative array that lists commands.
@@ -103,16 +109,19 @@ if (( $+commands[brew] )) ; then
 	source $(brew --prefix nvm)/nvm.sh
 fi
 
+# Kubernetes
 if (( $+commands[kubectl] )) ; then
 	source <(kubectl completion zsh)
 fi
 
-$ZSH_SCRIPTS/motd
+# RVM
+if [[ `uname` == 'Linux' ]]; then
+  export PATH="$PATH:/usr/share/rvm/bin"
+else
 
-source ~/.zsh-custom/themes/spaceship.zsh-theme
+fi
 
 # Go
-
 if [[ $OSTYPE == darwin* ]]; then
   export GOPATH="$HOME/go"
 else
