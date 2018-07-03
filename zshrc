@@ -111,6 +111,8 @@ $ZSH_SCRIPTS/motd
 
 source ~/.zsh-custom/themes/spaceship.zsh-theme
 
+# Go
+
 if [[ $OSTYPE == darwin* ]]; then
   export GOPATH="$HOME/go"
 else
@@ -118,3 +120,9 @@ else
 fi
 
 export PATH="$PATH:$(go env GOPATH)/bin"
+
+# i3
+
+if [[ $DESKTOP_SESSION == i3 ]]; then
+  
+fi
