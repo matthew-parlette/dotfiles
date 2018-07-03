@@ -41,6 +41,7 @@
 [submodule "oh-my-zsh"]
 	path = oh-my-zsh
 	url = https://github.com/robbyrussell/oh-my-zsh.git
+	ignore = all
 [submodule "vim-rails"]
 	path = vim/bundle/vim-rails
 	url = https://github.com/tpope/vim-rails
