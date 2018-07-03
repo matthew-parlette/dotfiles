@@ -59,7 +59,7 @@ plugins=(git)
 
 # User configuration
 
-export PATH="/usr/local/share/npm/bin:/usr/local/share/npm/bin:/home/matt/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/local/packer:/snap/bin"
+export PATH="$PATH:/usr/local/share/npm/bin:/usr/local/share/npm/bin:/home/matt/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/local/packer:/snap/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -124,5 +124,5 @@ export PATH="$PATH:$(go env GOPATH)/bin"
 # i3
 
 if [[ $DESKTOP_SESSION == i3 ]]; then
-  
+
 fi
