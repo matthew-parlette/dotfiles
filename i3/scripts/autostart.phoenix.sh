@@ -35,3 +35,9 @@ krawall --hacker --next
 
 # restart i3 so the bars are correct (multi-monitor issue from nova)
 i3-msg restart
+
+# Setup the screen properly
+/home/matt/.i3/scripts/display/office-tv
+
+# Start chrome
+dex /usr/share/applications/google-chrome.desktop
