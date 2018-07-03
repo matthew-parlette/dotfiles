@@ -117,8 +117,10 @@ fi
 # RVM
 if [[ `uname` == 'Linux' ]]; then
   export PATH="$PATH:/usr/share/rvm/bin"
-else
+fi
 
+if [[ $OSTYPE == darwin* ]]; then
+  export PATH="$PATH:$HOME/.rvm/bin/rvm"
 fi
 
 # Go
