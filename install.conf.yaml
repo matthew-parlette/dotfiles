@@ -40,7 +40,6 @@
     - "~/.shutter"
     - "~/.conky"
     - "~/.compton"
-    - "~/.kwm"
 - link:
     ~/.bashrc: bashrc
     ~/.dotfiles: ''
@@ -61,7 +60,6 @@
     ~/.shutter: shutter
     ~/.conky: conky
     ~/.compton: compton
-    ~/.kwm: kwm
 - shell:
     -
       - "fc-cache -f||echo 'fc-cache does not exist, skipping...'"
