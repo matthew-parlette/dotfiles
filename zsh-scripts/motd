@@ -1,7 +1,7 @@
 #!/bin/bash
 
 COLUMNS=$(tput cols)
-echo $COLUMNS
+# echo $COLUMNS
 padding="$((($COLUMNS-80)/2))"
 
 # Center text in terminal
