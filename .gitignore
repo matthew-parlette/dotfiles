@@ -16,3 +16,4 @@ shutter/accounts.xml
 shutter/profiles/*accounts.xml
 shutter/session.xml
 atom
+!i3/scripts/rofi/atom

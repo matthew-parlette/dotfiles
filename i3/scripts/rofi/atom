@@ -1,0 +1,17 @@
+#!/bin/bash
+# Get all directories in ~/src
+options=$(find ~/src -maxdepth 1;find ~/src/go/src/github.com/matthew-parlette -maxdepth 1)
+
+if [ -z $@ ]
+then
+  # Generate list of options
+  echo "$options"
+else
+  path=$@
+  notify-send -i atom "Opening $path in Atom" "$path starting"
+  i3-msg exec "atom --new-window $path"
+  # sleep 0.5
+  # i3-msg floating enable
+fi
+
+# handle_selection "$( echo "$vms" | rofi -dmenu -i -p 'VM ↠ ' -hlbg '#5FA5D7' -bc '#5FA5D7' )"
