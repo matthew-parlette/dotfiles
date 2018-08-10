@@ -138,3 +138,9 @@ export PATH="$PATH:$(go env GOPATH)/bin"
 if [[ $DESKTOP_SESSION == i3 ]]; then
 
 fi
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/matthew.parlette/Downloads/google-cloud-sdk 2/path.zsh.inc' ]; then source '/Users/matthew.parlette/Downloads/google-cloud-sdk 2/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/matthew.parlette/Downloads/google-cloud-sdk 2/completion.zsh.inc' ]; then source '/Users/matthew.parlette/Downloads/google-cloud-sdk 2/completion.zsh.inc'; fi
