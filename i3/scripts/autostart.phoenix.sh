@@ -37,7 +37,8 @@ krawall --hacker --next
 i3-msg restart
 
 # Setup the screen properly
-/home/matt/.i3/scripts/display/office-tv
+# /home/matt/.i3/scripts/display/office-dual
+/home/matt/.i3/scripts/display/office-monitor
 
 # Start chrome
 dex /usr/share/applications/google-chrome.desktop

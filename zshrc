@@ -97,6 +97,7 @@ alias ols="ls"
 alias oll="ls -l"
 alias ola="ls -al"
 alias i="feh --scale-down --auto-zoom"
+alias wait="echo 'Press any key to continue...';read -k1 -s"
 
 export SHELL="/bin/zsh"
 
