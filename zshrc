@@ -126,7 +126,7 @@ else
 fi
 
 if [[ $OSTYPE == darwin* ]]; then
-  # export PATH="$PATH:$HOME/.rvm/bin/rvm"
+  export PATH="$PATH:$HOME/.rvm/bin/rvm"
   source ~/.rvm/scripts/rvm
 fi
 
