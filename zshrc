@@ -128,6 +128,9 @@ fi
 if [[ $OSTYPE == darwin* ]]; then
   export PATH="$PATH:$HOME/.rvm/bin/rvm"
   source ~/.rvm/scripts/rvm
+
+  # Fix some bogus python3 targeting with macos
+  export BYOBU_PYTHON=/usr/local/bin/python3
 fi
 
 # Go
