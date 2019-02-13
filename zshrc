@@ -99,6 +99,9 @@ alias ola="ls -al"
 alias i="feh --scale-down --auto-zoom"
 alias wait="echo 'Press any key to continue...';read -k1 -s"
 
+# Vagrant aliases
+alias vup="vagrant up && echo 'Press any key to shutdown...';read -k1 -s;vagrant halt"
+
 export SHELL="/bin/zsh"
 
 # NVM
@@ -106,18 +109,20 @@ export NVM_DIR=~/.nvm
 # In general, (( $+param )) returns true if param is set.
 # $commands is an associative array that lists commands.
 # (( $+commands[command-name] )) returns true if the key 'command-name' exists.
-if (( $+commands[brew] )) ; then
+if type brew > /dev/null ; then
 	source $(brew --prefix nvm)/nvm.sh
 fi
 
 # Kubernetes
-if (( $+commands[kubectl] )) ; then
+if [[ -x `which kubectl 2>&1 > /dev/null` ]]; then
 	source <(kubectl completion zsh)
 fi
 
 # RVM
 if [[ `uname` == 'Linux' ]]; then
   export PATH="$PATH:/usr/share/rvm/bin"
+else
+  [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 fi
 
 if [[ $OSTYPE == darwin* ]]; then
@@ -141,7 +146,14 @@ if [[ $DESKTOP_SESSION == i3 ]]; then
 fi
 
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/matthew.parlette/Downloads/google-cloud-sdk 2/path.zsh.inc' ]; then source '/Users/matthew.parlette/Downloads/google-cloud-sdk 2/path.zsh.inc'; fi
+# if [ -f '/Users/matthew.parlette/Downloads/google-cloud-sdk 2/path.zsh.inc' ]; then source '/Users/matthew.parlette/Downloads/google-cloud-sdk 2/path.zsh.inc'; fi
 
 # The next line enables shell command completion for gcloud.
-if [ -f '/Users/matthew.parlette/Downloads/google-cloud-sdk 2/completion.zsh.inc' ]; then source '/Users/matthew.parlette/Downloads/google-cloud-sdk 2/completion.zsh.inc'; fi
+# if [ -f '/Users/matthew.parlette/Downloads/google-cloud-sdk 2/completion.zsh.inc' ]; then source '/Users/matthew.parlette/Downloads/google-cloud-sdk 2/completion.zsh.inc'; fi
+
+# tabtab source for serverless package
+# uninstall by removing these lines or running `tabtab uninstall serverless`
+[[ -f /Users/matthew.parlette/.nvm/versions/node/v10.8.0/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.zsh ]] && . /Users/matthew.parlette/.nvm/versions/node/v10.8.0/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.zsh
+# tabtab source for sls package
+# uninstall by removing these lines or running `tabtab uninstall sls`
+[[ -f /Users/matthew.parlette/.nvm/versions/node/v10.8.0/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh ]] && . /Users/matthew.parlette/.nvm/versions/node/v10.8.0/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh
