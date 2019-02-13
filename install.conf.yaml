@@ -20,6 +20,9 @@
     -
       - "unlink ~/.bashrc ||rm ~/.bashrc;unlink ~/.zshrc || rm ~/.zshrc;unlink ~/.oh-my-zsh || rm -rf ~/.oh-my-zsh"
       - "Cleaning default files that should be links"
+    -
+      - "gem install colorls"
+      - "Installing colorls"
 - clean:
     - "~"
     - "~/.dotfiles"
