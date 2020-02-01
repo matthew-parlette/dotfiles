@@ -9,15 +9,6 @@
       - "ls ~/.config || mkdir -p ~/.config"
       - "Setting up .config directory (if missing)"
     -
-      - "ls ~/.themes || mkdir ~/.themes;tar xvfz MediterraneanNight-2.03.tar.gz -C ~/.themes"
-      - "Installing GTK themes"
-    -
-      - "ls ~/.local/share/Steam || mkdir -p ~/.local/share/Steam"
-      - "Setting up Steam directory (if missing)"
-    -
-      - "ls ~/.local/share/applications || mkdir -p ~/.local/share/applications"
-      - "Creating user applications directory if it does not exist"
-    -
       - "unlink ~/.bashrc ||rm ~/.bashrc;unlink ~/.zshrc || rm ~/.zshrc;unlink ~/.oh-my-zsh || rm -rf ~/.oh-my-zsh"
       - "Cleaning default files that should be links"
     -
@@ -35,7 +26,6 @@
     - "~/.fonts"
     - "~/.vim"
     - "~/.vimrc"
-    - "~/.local/share/Steam/skins"
     - "~/.zshrc"
     - "~/.oh-my-zsh"
     - "~/.zsh-scripts"
@@ -46,16 +36,12 @@
 - link:
     ~/.bashrc: bashrc
     ~/.dotfiles: ''
-    ~/.irssi: irssi
     ~/.i3: i3
     ~/.i3blocks.conf: i3blocks.conf
     ~/.config/gtk-3.0: gtk-3.0
-    ~/.config/pystromo: pystromo
-    ~/.config/autokey: autokey
     ~/.fonts: fonts
     ~/.vim: vim
     ~/.vimrc: vimrc
-    ~/.local/share/Steam/skins: steam-skins
     ~/.zshrc: zshrc
     ~/.oh-my-zsh: oh-my-zsh
     ~/.zsh-scripts: zsh-scripts
