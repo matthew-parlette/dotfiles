@@ -81,6 +81,9 @@ fi
 
 if [[ $OSTYPE == darwin* ]]; then
   # Mac
+  ## VS Code Snippets
+  ## I'm leaving install.conf.yaml as linux only
+  [[ ! -h "$HOME/Library/Application\ Support/Code/User/snippets" ]] && rm -rf "$HOME/Library/Application\ Support/Code/User/snippets" && ln -s "$HOME/src/dotfiles/vscode/snippets" "$HOME/Library/Application\ Support/Code/User/snippets"
 
   ## RVM
   export PATH="$PATH:$HOME/.rvm/bin/rvm"
